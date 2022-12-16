@@ -27,5 +27,8 @@
     },
     "Contact":{
         "0" : "Contacts"
+    },
+    "Vacancy":{
+        "0" : "Vacancy"
     }
 }
