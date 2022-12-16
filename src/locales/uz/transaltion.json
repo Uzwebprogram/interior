@@ -1,5 +1,23 @@
 {
     "Header":{
-        "0":"Salom"
+        "0":"asosiy",
+         "1": "tijorat",
+         "2": "turar joy",
+         "3" : "oldin va keyin",
+         "4" : "blog",
+         "5" : "Sotish",
+         "6" : "kontaktlar"
+    },
+    "ContactModal":{
+        "0": "Maslahatga buyurtma berish",
+        "1": "Menejer tez orada siz bilan bog'lanadi",
+        "2": "ismingiz",
+        "3": "ism-familiya",
+        "4": "Telefon raqamingiz"
+    },
+    "Footer":{
+        "0" : "Maslahatga buyurtma berish",
+        "1": "Buyurtma"
     }
+    
 }

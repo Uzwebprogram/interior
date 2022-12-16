@@ -5,7 +5,7 @@ import { Col, Row } from "react-grid-system";
 import { useTranslation } from "react-i18next";
 import ModalCommon from "../../common/Modal/Modal";
 import CommonBtn from "../../common/CommonBtn";
-
+import CommonInput from "../../common/CommonInput";
 
 const Hero = () => {
   const { t, i18n } = useTranslation();
@@ -15,17 +15,14 @@ const Hero = () => {
   return (
     <>
       <Section>
-        <ModalCommon handleClose={handleClose} open={open}>
+        <ModalCommon width={550} handleClose={handleClose} open={open}>
           <ModalHeader>
             <h2>{t("HeroModal.0")}</h2>
             <p>{t("HeroModal.1")}</p>
           </ModalHeader>
           <ModalBody>
             <Form>
-              <InputControls>
-                <label htmlFor="name">{t("HeroModal.2")}</label>
-                <input type="text" placeholder={t("HeroModal.3")} required />
-              </InputControls>
+              <CommonInput title={t("HeroModal.2")} placeholder={t("HeroModal.3")} type={"text"}/>
             </Form>
           </ModalBody>
         </ModalCommon>

@@ -1,10 +1,10 @@
 import React from 'react'
 import {Button} from './styled-index'
 
-const CommonBtn = ({children, type, onClick}) => {
+const CommonBtn = ({children, type, onClick , style}) => {
   return (
     <>
-     <Button type={type} onClick={onClick}>{children}</Button>
+     <Button type={type} style={style} onClick={onClick}>{children}</Button>
     </>
   )
 }

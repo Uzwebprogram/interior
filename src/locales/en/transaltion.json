@@ -1,5 +1,22 @@
 {
     "Header":{
-        "0":"Hello"
+        "0":"main",
+         "1" : "commercial",
+         "2" : "residential",
+         "3" : "before and after",
+         "4" : "blog",
+         "5" : "Sale",
+         "6" : "contacts"
+    },
+    "ContactModal":{
+        "0": "Order a consultation",
+        "1": "The manager will contact you shortly",
+        "2": "your name",
+        "3": "first name-surname",
+        "4": "Your phone number"
+    },
+    "Footer": {
+        "0" : "Order a consultation",
+         "1" : "Order"
     }
 }
