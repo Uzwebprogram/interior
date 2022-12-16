@@ -17,6 +17,18 @@
     },
     "Footer": {
         "0" : "Order a consultation",
-         "1" : "Order"
+         "1" : "Order",
+         "2" : "We provide a full range of interior design services",
+         "3" : "Navigation",
+         "4" : "Contact us",
+         "5" : "Uzbekistan, Tashkent, Navoi st. 9.",
+         "6" : "Email address",
+         "7" : "Subscribe"
+    },
+    "Contact":{
+        "0" : "Contacts"
+    },
+    "Vacancy":{
+        "0" : "Vacancy"
     }
 }

@@ -43,7 +43,7 @@ function Header() {
               <NavLink to={"/"}><a href=' '>{t("Header.5")}</a></NavLink>
             </li>
             <li>
-              <NavLink to={"/"}><a href=' '>{t("Header.6")}</a></NavLink>
+              <NavLink to={"/contact"}><a href=' '>{t("Header.6")}</a></NavLink>
             </li>
           </ul>
               <LanguageHeader HandleClick={HandleClick}/>
