@@ -16,7 +16,7 @@ function HamburgerMenu({HamburgerClick , HandleClickClose}) {
           {
               id : 1, 
               title : "Header.0",
-              link : "/services",
+              link : "/",
   
           },
           {
@@ -51,7 +51,7 @@ function HamburgerMenu({HamburgerClick , HandleClickClose}) {
           {
             id : 6, 
             title : "Header.6",
-            link : "/reviews",
+            link : "/contact",
         }, 
       ]
     return(

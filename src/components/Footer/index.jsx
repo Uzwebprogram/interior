@@ -4,10 +4,12 @@ import FooterBottom from './FooterBottom'
 import FooterContact from './FooterContact'
 function Footer() {
   return (
-    <WrapperContainer>
+    <>
+       <WrapperContainer>
             <FooterContact/>
-            <FooterBottom/>
     </WrapperContainer>
+            <FooterBottom/> 
+    </>
   )
 }
 

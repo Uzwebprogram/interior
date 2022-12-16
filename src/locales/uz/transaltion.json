@@ -17,7 +17,15 @@
     },
     "Footer":{
         "0" : "Maslahatga buyurtma berish",
-        "1": "Buyurtma"
+        "1": "Buyurtma",
+        "2" : "Biz ichki dizayn xizmatlarining to'liq spektrini taqdim etamiz",
+         "3" : "Navigatsiya",
+         "4" : "Biz bilan bog'laning",
+         "5" : "O'zbekiston, Toshkent, Navoiy ko'chasi 9.",
+         "6" : "Elektron pochta manzili",
+         "7" : "Obuna bo'lish"
+    },
+    "Contact":{
+        "0" : "Kontaktlar"
     }
-    
 }
