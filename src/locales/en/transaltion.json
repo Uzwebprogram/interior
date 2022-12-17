@@ -30,5 +30,9 @@
     },
     "Vacancy":{
         "0" : "Vacancy"
+    },
+    "notFound":{
+        "0" : "PAGE NOT FOUND PLEASE GO BACK",
+        "1" :"GO BACK"
     }
 }

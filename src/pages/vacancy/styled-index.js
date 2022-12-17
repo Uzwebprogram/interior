@@ -14,8 +14,7 @@ export const Wrapper = styled.div`
     .Card{
         border: 5px solid #FFFFFF;
         border-radius: 3px;
-        padding: 5px;
-
+        padding:10px;
         .top{
             display: flex;
             justify-content: space-between;
@@ -40,7 +39,7 @@ export const Wrapper = styled.div`
             color: #AAAAAA;
         }
         }
-        p{
+        p:nth-child(2){
             font-family: 'Ruda';
             font-style: normal;
             font-weight: 400;
@@ -50,4 +49,21 @@ export const Wrapper = styled.div`
             color: #FFFFFF;
         }
     }
+      button{
+            background: #494949; 
+            padding:22px 0px;
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            a{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 120%;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+            text-decoration: none;
+            }
+}
+    
 `

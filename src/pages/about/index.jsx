@@ -1,8 +1,9 @@
 import React from 'react'
-
+import {Wrapper} from "./styled-index"
 function About() {
   return (
-    <div>About</div>
+    <Wrapper>
+    </Wrapper>
   )
 }
 export default About
