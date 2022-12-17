@@ -65,7 +65,6 @@ const OurProject = () => {
                   flexGrow: 1,
                   bgcolor: "background.paper",
                   display: "flex",
-                  height: 224,
                 }}
               >
                 <Tabs
@@ -75,6 +74,7 @@ const OurProject = () => {
                   onChange={handleChange}
                   aria-label="Vertical tabs example"
                   sx={{ borderRight: 1, borderColor: "divider" }}
+                  className='tabsWrap'
                 >
                   <Tab label={t("OurProject.0")} {...a11yProps(0)} />
                   <Tab label={t("OurProject.0")} {...a11yProps(1)} />

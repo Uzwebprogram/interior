@@ -22,7 +22,8 @@ const CommonHero = ({title1, title2, text, setOpen, btnText, isTitle, bg}) => {
               {isTitle ? <p>{text}</p> : null}
               <CommonBtn onClick={() => setOpen(true)}>{btnText}</CommonBtn>
             </Col>
-            <i class="bx bx-chevron-down"></i>
+            {/* <i class="bx bx-chevron-down"></i> */}
+            <i class='bx bx-chevron-down bx-fade-up' ></i>
           </Row>
         </WrapperContainer>
       </Section>

@@ -1,34 +1,81 @@
 {
-    "Header":{
-        "0":"main",
-         "1" : "commercial",
-         "2" : "residential",
-         "3" : "before and after",
-         "4" : "blog",
-         "5" : "Sale",
-         "6" : "contacts"
-    },
-    "ContactModal":{
-        "0": "Order a consultation",
-        "1": "The manager will contact you shortly",
-        "2": "your name",
-        "3": "first name-surname",
-        "4": "Your phone number"
-    },
-    "Footer": {
-        "0" : "Order a consultation",
-         "1" : "Order",
-         "2" : "We provide a full range of interior design services",
-         "3" : "Navigation",
-         "4" : "Contact us",
-         "5" : "Uzbekistan, Tashkent, Navoi st. 9.",
-         "6" : "Email address",
-         "7" : "Subscribe"
-    },
-    "Contact":{
-        "0" : "Contacts"
-    },
-    "Vacancy":{
-        "0" : "Vacancy"
-    }
+  "Header": {
+    "0": "main",
+    "1": "commercial",
+    "2": "residential",
+    "3": "before and after",
+    "4": "blog",
+    "5": "Sale",
+    "6": "contacts"
+  },
+  "Hero": {
+    "0": "WELCOME TO LUXHOUSE",
+    "1": "CREATE THE ELEGANT INTERIOR OF YOUR DREAM HOME",
+    "2": "We will develop an interior design and make a dream renovation in your apartment in Tashkent.",
+    "3": "Calculate project"
+  },
+  "HeroModal": {
+    "0": "Calculate project",
+    "1": "Enter the data to calculate the cost of the design project of your premises in Tashkent",
+    "2": "your name",
+    "3": "first name-surname",
+    "4": "Your phone number",
+    "5": "Select room type",
+    "6": "Home",
+    "7": "Apartment",
+    "8": "Commercial object",
+    "9": "Housing type",
+    "10": "New building",
+    "11": "Resellers",
+    "12": "Select room type",
+    "13": "up to 50 sq.m",
+    "14": "up to 250 sq.m",
+    "15": "up to 500 sq.m",
+    "16": "more than 500 sq.m",
+    "17": "Additional questions and comments",
+    "18": "comments",
+    "19": "Calculate"
+  },
+  "Interier": {
+    "0": "commercial interiors",
+    "1": "living interiors"
+  },
+  "OurProject": {
+    "0": "our completed projects!"
+  },
+  "Custumer": {
+    "0": "Customer reviews",
+    "1": "We will undertake the development of the design of the project, architectural supervision, construction and repair work, selection of accessories and furniture"
+  },
+  "LastProject": {
+    "0": "Recent projects",
+    "1": "Let's take over",
+    "2": "We will develop design, interior and "
+  },
+  "Trusted": {
+    "0": "trust us"
+  },
+  "ContactModal": {
+    "0": "Order a consultation",
+    "1": "The manager will contact you shortly",
+    "2": "your name",
+    "3": "first name-surname",
+    "4": "Your phone number"
+  },
+  "Footer": {
+    "0": "Order a consultation",
+    "1": "Order",
+    "2": "We provide a full range of interior design services",
+    "3": "Navigation",
+    "4": "Contact us",
+    "5": "Uzbekistan, Tashkent, Navoi st. 9.",
+    "6": "Email address",
+    "7": "Subscribe"
+  },
+  "Contact": {
+    "0": "Contacts"
+  },
+  "Vacancy": {
+    "0": "Vacancy"
+  }
 }

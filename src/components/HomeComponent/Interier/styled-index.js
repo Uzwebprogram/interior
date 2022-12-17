@@ -18,7 +18,6 @@ export const InterContainer = styled.div`
       width: 100%;
       position: relative;
       h2 {
-        font-family: "Poppins";
         font-style: normal;
         font-weight: 100;
         font-size: 40px;
