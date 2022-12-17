@@ -6,6 +6,7 @@ export const Commoninput = styled.div`
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
+  margin: 10px 0;
 
   label {
     font-weight: 500;
