@@ -34,5 +34,16 @@
     "notFound":{
         "0" : "PAGE NOT FOUND PLEASE GO BACK",
         "1" :"GO BACK"
+    },
+    "About" : {
+        "0" : "our employees",
+        "1" : "WE ARE THE PERFECT TEAM FOR HOME INTERIOR FINISHING"
+    },
+    "AddInterior" : {
+        "0" : "I created an individual project, interior, premium class, online and lyuboy tochke mira",
+        "1" : "WE CREATE ELITE INTERIORS"
+    },
+    "add_interior" : {
+        "0" : "INTERIOR DESIGN SERVICES"
     }
 }

@@ -34,5 +34,17 @@
     "notFound":{
         "0" : "SAHIFA TOPILMADIGAN ORTAGA O'RING",
         "1" : "ORTAGA"
+    },
+    "About" : {
+        "0" : "bizning xodimlarimiz",
+        "1" : "BIZ UYLARNI ICHKI BORISHINI BERISH UCHUN MUMKIN JAMOAMIZ"
+
+    },
+    "AddInterior" : {
+        "0" : "Biz dunyoning istalgan nuqtasida individual premium interyer loyihasini yaratamiz",
+        "1" : "BIZ ELITA INTERIORLARNI YARATAMIZ"
+    },
+    "add_interior" : {
+        "0" : "INTERIOR DIZAYN XIZMATLARI"
     }
 }

@@ -5,6 +5,7 @@ const About = lazy(() => import("./../pages/about/index"))
 const Contact = lazy(() => import("./../pages/contact/index"))
 const Vacancy = lazy(() => import("./../pages/vacancy/index"))
 const Portfolio = lazy(() => import("./../pages/portfolio/index"))
+const AddInterior = lazy(() => import("./../pages/add_interior/index"))
 export const RouterData = [
     {
         id : 1,
@@ -35,5 +36,10 @@ export const RouterData = [
         id : 4,
         path : "/portfolio",
         component : <Portfolio/>
+    },
+    {
+        id : 4,
+        path : "/addinterior",
+        component : <AddInterior/>
     },
 ]
