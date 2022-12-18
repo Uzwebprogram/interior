@@ -7637,7 +7637,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.2, prop-types@^15.8.0, prop-types@^15.8.1:
+prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.8.0, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7900,6 +7900,13 @@ react-transition-group@^4.4.5:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
+
+react-twentytwenty@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-twentytwenty/-/react-twentytwenty-1.2.1.tgz#4060c263c60c6539da9e8da28c966687f3adbe7e"
+  integrity sha512-N2wyufzUqvFwuC8VztCqhYIv7aTxa8BDZPcsRU7HIajjAcluZ+naNHD/P50jFFYDl+zd4ll4dCVNkvqwyP1KmA==
+  dependencies:
+    prop-types "^15.6.0"
 
 react@^18.2.0:
   version "18.2.0"
