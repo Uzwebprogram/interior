@@ -13,15 +13,20 @@ export const RowWrap = styled.div`
   position: relative;
   margin: 0 !important;
   i {
-    color: #fff;
+    color: #000;
     font-size: 66px;
     position: absolute;
-    bottom: -16%;
+    bottom: -30%;
     left: 46%;
 
-    @media only screen and (max-width: 375px) {
-      bottom: -25%;
+    @media only screen and (max-width: 425px) {
+      bottom: -40%;
       left: 40%;
+    }
+
+    @media only screen and (max-width: 375px) {
+      bottom: -36%;
+      left: 39%;
     }
   }
 `;
