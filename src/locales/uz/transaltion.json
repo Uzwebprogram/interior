@@ -46,5 +46,52 @@
     },
     "add_interior" : {
         "0" : "INTERIOR DIZAYN XIZMATLARI"
-    }
+    },
+  "Hero": {
+    "0": "LUXHOUSEGA Xush kelibsiz",
+    "1": "ORZULARINGIZDAGI UYINGIZNING ELGANT INTERERIYERINI YARATING",
+    "2": "Toshkentdagi kvartirangizning interyer dizaynini ishlab chiqamiz va orzuingizdek ta’mirlaymiz",
+    "3": "Loyihani hisoblash"
+  },
+  "HeroModal": {
+    "0": "Loyihani hisoblash",
+    "1": "Toshkent shahridagi binolaringizning loyihalash loyihasi narxini hisoblash uchun ma'lumotlarni kiriting",
+    "2": "ismingiz",
+    "3": "ism-familiya",
+    "4": "Telefon raqamingiz",
+    "5": "Xona turini tanlang",
+    "6": "Uy",
+    "7": "Kvartira",
+    "8": "Tijorat ob'ekti",
+    "9": "Uy-joy turi",
+    "10": "Yangi bino",
+    "11": "Resellerlar",
+    "12": "Xona turini tanlang",
+    "13": "50 kv.m gacha",
+    "14": "250 kv.m gacha",
+    "15": "500 kv.m gacha",
+    "16": "500 kv.m dan ortiq",
+    "17": "Qo'shimcha savollar va sharhlar",
+    "18": "sharhlar",
+    "19": "Hisoblash"
+  },
+  "Interier": {
+    "0": "tijorat interyerlari",
+    "1": "yashash interyerlari"
+  },
+  "OurProject": {
+    "0": "bizning tugallangan loyihalarimiz!"
+  },
+  "Custumer": {
+    "0": "Mijoz sharhlari",
+    "1": "Biz loyiha loyihasini ishlab chiqishni, arxitektura nazoratini, qurilish va ta'mirlash ishlarini, aksessuarlar va mebellarni tanlashni o'z zimmamizga olamiz"
+  },
+  "LastProject": {
+    "0": "So'nggi loyihalar",
+    "1": "Keling, egallab olamiz",
+    "2": "Biz dizayn, interyer va "
+  },
+  "Trusted": {
+    "0": "bizga ishon"
+  }
 }
