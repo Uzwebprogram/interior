@@ -63,4 +63,23 @@ export const Wrapper = styled.div`
             }
         }
     }
+    .Card{
+        img{
+            width: 100%;
+        }
+        p{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 38px;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+            background: #494949;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
+            padding: 26px 0;
+        }
+    }
 `

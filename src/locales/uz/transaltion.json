@@ -45,7 +45,8 @@
         "1" : "BIZ ELITA INTERIORLARNI YARATAMIZ"
     },
     "add_interior" : {
-        "0" : "INTERIOR DIZAYN XIZMATLARI"
+        "0" : "INTERIOR DIZAYN XIZMATLARI",
+        "1" : "Ta'mirlashni qo'llab-quvvatlash xizmatlari:"
     },
   "Hero": {
     "0": "LUXHOUSEGA Xush kelibsiz",

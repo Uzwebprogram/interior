@@ -33,6 +33,21 @@ function AddInteriorComponent() {
                 <button><a href="">Смотреть примеры в формате PDF</a></button>
             </Col>)}
         </Row>
+        <h2>{t("add_interior.1")}</h2>
+        <Row>
+          <Col className='Card' lg={4} md={12}>
+            <p>Авторский надзор</p>
+            <img src="https://thumb.cadbull.com/img/product_img/original/Home-Project-Design-AutoCAD-Drawing-File--Thu-Nov-2019-07-06-46.jpg" alt="" />
+          </Col>
+        <Col className='Card' lg={4} md={12}>
+            <p>Комплектация</p>
+            <img src="https://thumb.cadbull.com/img/product_img/original/Home-Project-Design-AutoCAD-Drawing-File--Thu-Nov-2019-07-06-46.jpg" alt="" />
+          </Col>
+          <Col className='Card' lg={4} md={12}>
+            <p>Консультация</p>
+            <img src="https://thumb.cadbull.com/img/product_img/original/Home-Project-Design-AutoCAD-Drawing-File--Thu-Nov-2019-07-06-46.jpg" alt="" />
+          </Col>
+        </Row>
     </Wrapper>
   )
 }

@@ -44,7 +44,8 @@
         "1" : "WE CREATE ELITE INTERIORS"
     },
     "add_interior" : {
-        "0" : "INTERIOR DESIGN SERVICES"
+        "0" : "INTERIOR DESIGN SERVICES",
+        "1" : "Repair Support Services:"
     },
   "Hero": {
     "0": "WELCOME TO LUXHOUSE",
