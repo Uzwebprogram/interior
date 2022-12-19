@@ -3,6 +3,7 @@ import { Section, GridContainer } from "./styled-index";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { itemData } from "./data";
+import { useTranslation } from "react-i18next";
 function srcset(image, size, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -12,10 +13,12 @@ function srcset(image, size, rows = 1, cols = 1) {
   };
 }
 const ImageGrid = () => {
+    const {t, i18n} = useTranslation()
   return (
     <>
       <Section>
         <GridContainer>
+          <h2>{t("GridImg.0")}</h2>
           <ImageList
             className="grid-img"
             sx={{ width: 500, height: 450 }}
