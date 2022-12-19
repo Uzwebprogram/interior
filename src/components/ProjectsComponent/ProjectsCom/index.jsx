@@ -19,8 +19,8 @@ const ProjectsCom = () => {
                   <Col className="col" lg={9} md={12} sm={12} sx={12}>
                     <TwentyTwenty
                       className="twenty"
-                      left={<img src={After} width="100%" height="557px" />}
-                      right={<img src={Before} width="100%" height="557px" />}
+                      left={<img className="twenty-img" src={After} width="100%" height="557px" />}
+                      right={<img src={Before} className="twenty-img" width="100%" height="557px" />}
                       slider={<div className="slider" />}
                       minDistanceToBeginInteraction={15}
                     />
