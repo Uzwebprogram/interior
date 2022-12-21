@@ -64,8 +64,8 @@ export const Section = styled.div`
       /* font-style: normal !important;
       font-weight: 500 !important;
       font-size: 14px !important;
-      text-transform: uppercase;
-      color: #1b1b1b !important; */
+      text-transform: uppercase; */
+      color: #1b1b1b !important;
       /* min-height: 66px !important; */
 
       @media only screen and (max-width: 768px) {
