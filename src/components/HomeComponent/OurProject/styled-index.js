@@ -6,19 +6,31 @@ export const TabDiv = styled.div`
   font-weight: 500 !important;
   font-size: 14px !important;
   text-transform: uppercase;
-  color: #1b1b1b !important;
+  /* color: #1b1b1b ; */
   min-height: 66px !important;
-  background: #000;
+  .css-1q2h7u5.Mui-selected {
+    color: #fff !important;
+  }
+  /* .Mui-selected{
+    color: red;
+  } */
 `;
 export const BigTabs = styled.div`
   border: none !important;
   border-left: 1px solid #fff !important;
   width: 550px !important;
-  
- 
-  .MuiTabs-indicator  {
+  color: #fff;
+
+  .MuiTabs-indicator {
     width: 100%;
-    background: #000000 ;
+    background: #000000;
+    color: #fff !important;
+  }
+  .css-1n6uhfl.Mui-disabled,
+  .css-1n6uhfl,
+  .css-1ehaqqx-MuiButtonBase-root-MuiTabScrollButton-root {
+    display: none;
+    height: 0;
   }
 `;
 
@@ -59,8 +71,8 @@ export const Section = styled.div`
     }
 
     .css-1ehaqqx-MuiButtonBase-root-MuiTabScrollButton-root {
-      height: 0 !important;
-      display: none !important;
+      /* height: 0 !important; */
+      /* display: none !important; */
     }
     .css-10d9dml-MuiTabs-indicator {
       /* width: 100% !important; */
@@ -78,9 +90,9 @@ export const Section = styled.div`
         height: 181px !important;
       }
     }
-    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    /* .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
       color: #fff !important;
-    }
+    } */
     .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
       /* z-index: 1 !important; */
       /* font-style: normal !important;
