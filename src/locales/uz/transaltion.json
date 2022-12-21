@@ -1,53 +1,79 @@
 {
-    "Header":{
-        "0":"asosiy",
-         "1": "tijorat",
-         "2": "turar joy",
-         "3" : "oldin va keyin",
-         "4" : "blog",
-         "5" : "Sotish",
-         "6" : "kontaktlar"
-    },
-    "ContactModal":{
-        "0": "Maslahatga buyurtma berish",
-        "1": "Menejer tez orada siz bilan bog'lanadi",
-        "2": "ismingiz",
-        "3": "ism-familiya",
-        "4": "Telefon raqamingiz"
-    },
-    "Footer":{
-        "0" : "Maslahatga buyurtma berish",
-        "1": "Buyurtma",
-        "2" : "Biz ichki dizayn xizmatlarining to'liq spektrini taqdim etamiz",
-         "3" : "Navigatsiya",
-         "4" : "Biz bilan bog'laning",
-         "5" : "O'zbekiston, Toshkent, Navoiy ko'chasi 9.",
-         "6" : "Elektron pochta manzili",
-         "7" : "Obuna bo'lish"
-    },
-    "Contact":{
-        "0" : "Kontaktlar"
-    },
-    "Vacancy":{
-        "0" : "Bo'sh joy"
-    },
-    "notFound":{
-        "0" : "SAHIFA TOPILMADIGAN ORTAGA O'RING",
-        "1" : "ORTAGA"
-    },
-    "About" : {
-        "0" : "bizning xodimlarimiz",
-        "1" : "BIZ UYLARNI ICHKI BORISHINI BERISH UCHUN MUMKIN JAMOAMIZ"
+  "Header": {
+    "0": "asosiy",
+    "1": "tijorat",
+    "2": "turar joy",
+    "3": "oldin va keyin",
+    "4": "blog",
+    "5": "Sotish",
+    "6": "kontaktlar"
+  },
 
-    },
-    "AddInterior" : {
-        "0" : "Biz dunyoning istalgan nuqtasida individual premium interyer loyihasini yaratamiz",
-        "1" : "BIZ ELITA INTERIORLARNI YARATAMIZ"
-    },
-    "add_interior" : {
-        "0" : "INTERIOR DIZAYN XIZMATLARI",
-        "1" : "Ta'mirlashni qo'llab-quvvatlash xizmatlari:"
-    },
+  "Example": {
+    "0": "joy, masalan, oshxona yoki koridor",
+    "1": "Gollandiyada ajoyib loyiha yakunlandi - 3 qavatli uy. Yorqin va estetik zamonaviy interyer.",
+    "2": "Oshxona-yashash xonasi keng bo'lib, ranglar va pardozlash materiallari kontrasti asosida qurilgan. Ovqatlanish xonasi juda oqlangan va atmosfera. Ovqatlanish maydoni ustidagi qandil interyerga nafislik qo'shadi.",
+    "3": "Mehmon hammomi yorug 'katta oyna va yorug'lik bilan bo'sh joyni vizual ravishda kengaytiradi.",
+    "4": "Ushbu loyihadagi asosiy nuqta amaliylikdir. Ortiqcha narsalar saqlash tizimlarining jabhalari orqasida ko'zdan yashiriladi. Shu tufayli ichki qism engil ko'rinadi, ortiqcha yuklanmagan.",
+    "5": "Zal - bu e'tibordan chetda qoldirib bo'lmaydigan makon. Biz uni iloji boricha ajoyib va ​​qulay qilishga harakat qildik, chunki zal butun interyerning birinchi taassurotidir.",
+    "6": "Yotoqxona neytral tonlarda boy rang aksanlari bilan amalga oshiriladi. Banyoda toza chiziqlar, grafikalar va funksionallik mavjud.",
+    "7": "Ushbu loyihada hatto kinozalli zal mavjud. Tomosha qilishdan zavqlaning!",
+    "8": "Joylashuvlar:",
+    "9": "Toshkent",
+    "10": "Maydon:",
+    "11": "245 kv.m",
+    "12": "2022",
+    "13": "Uslub:",
+    "14": "Zamonaviy",
+    "15": "Dizayn va 3D vizualizatsiya:",
+    "16": "PROSVIRIN DIZAYN"
+  },
+
+  "AboutUs": {
+    "0": "O'zingizning jamoat interyeringizni yarating"
+  },
+  "GridImg": {
+    "0": "tijorat interyerlari"
+  },
+  "ContactModal": {
+    "0": "Maslahatga buyurtma berish",
+    "1": "Menejer tez orada siz bilan bog'lanadi",
+    "2": "ismingiz",
+    "3": "ism-familiya",
+    "4": "Telefon raqamingiz"
+  },
+  "Footer": {
+    "0": "Maslahatga buyurtma berish",
+    "1": "Buyurtma",
+    "2": "Biz ichki dizayn xizmatlarining to'liq spektrini taqdim etamiz",
+    "3": "Navigatsiya",
+    "4": "Biz bilan bog'laning",
+    "5": "O'zbekiston, Toshkent, Navoiy ko'chasi 9.",
+    "6": "Elektron pochta manzili",
+    "7": "Obuna bo'lish"
+  },
+  "Contact": {
+    "0": "Kontaktlar"
+  },
+  "Vacancy": {
+    "0": "Bo'sh joy"
+  },
+  "notFound": {
+    "0": "SAHIFA TOPILMADIGAN ORTAGA O'RING",
+    "1": "ORTAGA"
+  },
+  "About": {
+    "0": "bizning xodimlarimiz",
+    "1": "BIZ UYLARNI ICHKI BORISHINI BERISH UCHUN MUMKIN JAMOAMIZ"
+  },
+  "AddInterior": {
+    "0": "Biz dunyoning istalgan nuqtasida individual premium interyer loyihasini yaratamiz",
+    "1": "BIZ ELITA INTERIORLARNI YARATAMIZ"
+  },
+  "add_interior": {
+    "0": "INTERIOR DIZAYN XIZMATLARI",
+    "1": "Ta'mirlashni qo'llab-quvvatlash xizmatlari:"
+  },
   "Hero": {
     "0": "LUXHOUSEGA Xush kelibsiz",
     "1": "ORZULARINGIZDAGI UYINGIZNING ELGANT INTERERIYERINI YARATING",

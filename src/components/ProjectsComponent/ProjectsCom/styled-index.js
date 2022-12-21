@@ -9,21 +9,39 @@ export const BeforeContainer = styled.div`
   width: 100%;
   margin: 0 auto;
 
+  .twenty-img {
+    width: 100%;
+    height: 557px;
+    @media only screen and (max-width: 768px) {
+      height: 360px;
+    }
+    @media only screen and (max-width: 425px) {
+      height: 270px;
+    }
+  }
+
   .slider {
     height: 557px;
     width: 100px;
     width: 2px;
     z-index: 1;
     background: #fff;
+
+    @media only screen and (max-width: 768px) {
+      height: 360px;
+    }
+    @media only screen and (max-width: 425px) {
+      height: 270px;
+    }
   }
-   .row{
+  .row {
     margin: 0 !important;
-   }
-   .big-col{
+  }
+  .big-col {
     padding: 0 !important;
     margin: 20px 0 !important;
-   }
-  .small-row{
+  }
+  .small-row {
     margin: 0 !important;
   }
   .col {
@@ -34,6 +52,9 @@ export const BeforeContainer = styled.div`
     background: #fff;
     padding: 0 !important;
     height: 557px;
+    @media only screen and (max-width: 768px) {
+      height: auto;
+    }
 
     h3 {
       color: #000;
@@ -54,7 +75,7 @@ export const BeforeContainer = styled.div`
     }
   }
   .col-content {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     padding: 10px;
   }
