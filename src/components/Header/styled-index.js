@@ -4,7 +4,7 @@ export const Wrapper = styled.div `
     width: 100%;
     background-color: black;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     .overlay{
         display: none;
         position: fixed;
