@@ -73,8 +73,15 @@ const OurProject = () => {
                   value={value}
                   onChange={handleChange}
                   aria-label="Vertical tabs example"
-                  sx={{ borderRight: 1, borderColor: "divider" }}
-                  className='tabsWrap'
+                  sx={{
+                    borderLeft: 1,
+                    borderColor: "#fff",
+                    width: "550px",
+                    borderRight: "0",
+                    borderBottom: "0",
+                    borderTop: "0",
+                  }}
+                  className="tabsWrap"
                 >
                   <Tab label={t("OurProject.0")} {...a11yProps(0)} />
                   <Tab label={t("OurProject.0")} {...a11yProps(1)} />

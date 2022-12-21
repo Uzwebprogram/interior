@@ -73,9 +73,9 @@ export const Section = styled.div`
       }
     }
     .css-35zqo5-MuiTabs-root {
-      border: none !important;
+      /* border: none !important;
       border-left: 1px solid #fff !important;
-      width: 550px !important;
+      width: 550px !important; */
       @media only screen and (max-width: 768px) {
         width: 100% !important;
         border: none !important;
