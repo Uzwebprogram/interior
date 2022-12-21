@@ -9,6 +9,16 @@ export const TabDiv = styled.div`
   color: #1b1b1b !important;
   min-height: 66px !important;
 `;
+export const BigTabs = styled.div`
+  border: none !important;
+  border-left: 1px solid #fff !important;
+  width: 550px !important;
+ 
+  .css-10d9dml-MuiTabs-indicator {
+    width: 100% !important;
+    background: #000000 !important;
+  }
+`;
 
 export const Section = styled.div`
   padding: 20px 0;

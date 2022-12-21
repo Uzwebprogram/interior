@@ -1,10 +1,9 @@
 import React from "react";
 import { Col, Row } from "react-grid-system";
 import { WrapperContainer } from "../../../style-App";
-import { Section, TabDiv } from "./styled-index";
+import { Section, TabDiv, BigTabs } from "./styled-index";
 import { useTranslation } from "react-i18next";
-import './styled.css'
-
+import "./styled.css";
 
 // Mui tabs import
 import PropTypes from "prop-types";
@@ -69,99 +68,102 @@ const OurProject = () => {
                 }}
               >
                 <Tabs
+                  component={BigTabs}
                   orientation="vertical"
                   variant="scrollable"
                   value={value}
                   onChange={handleChange}
                   aria-label="Vertical tabs example"
-                  sx={{
-                    borderLeft: 1,
-                    borderColor: "#fff",
-                    maxWidth: "550px",
-                    width: "550px",
-                    margin: "0 auto",
-                    borderRight: "0",
-                    borderBottom: "0",
-                    borderTop: "0",
-                    zIndex: "1",
-                    
+                  // sx={{
+                  //   borderLeft: 1,
+                  //   borderColor: "#fff",
+                  //   maxWidth: "550px",
+                  //   width: "550px",
+                  //   margin: "0 auto",
+                  //   borderRight: "0",
+                  //   borderBottom: "0",
+                  //   borderTop: "0",
+                  //   zIndex: "1",
 
-                    span: {
-                      width: "100%",
-                      // color: "#fff"
-                    },
-                  }}
+                  //   span: {
+                  //     width: "100%",
+                  //     color: "#fff"
+                  //   },
+                  // }}
                   className="tabsWrap"
                 >
                   <Tab
-                  component={TabDiv}
-                   
+                    component={TabDiv}
                     label={t("OurProject.0")}
                     {...a11yProps(0)}
                   />
                   <Tab
-                  component={TabDiv}
-                    
+                    component={TabDiv}
                     label={t("OurProject.0")}
                     {...a11yProps(1)}
                   />
                   <Tab
-                    sx={{
-                      minHeight: "66px",
-                      zIndex: "1",
-                      fontWeight: "500",
-                      fontSize: "14px",
-                      textTransform: "uppercase",
-                      color: "#1b1b1b",
-                    }}
+                    component={TabDiv}
+                    // sx={{
+                    //   minHeight: "66px",
+                    //   zIndex: "1",
+                    //   fontWeight: "500",
+                    //   fontSize: "14px",
+                    //   textTransform: "uppercase",
+                    //   color: "#1b1b1b",
+                    // }}
                     label={t("OurProject.0")}
                     {...a11yProps(2)}
                   />
                   <Tab
-                    sx={{
-                      minHeight: "66px",
-                      zIndex: "1",
-                      fontWeight: "500",
-                      fontSize: "14px",
-                      textTransform: "uppercase",
-                      color: "#1b1b1b",
-                    }}
+                    component={TabDiv}
+                    // sx={{
+                    //   minHeight: "66px",
+                    //   zIndex: "1",
+                    //   fontWeight: "500",
+                    //   fontSize: "14px",
+                    //   textTransform: "uppercase",
+                    //   color: "#1b1b1b",
+                    // }}
                     label={t("OurProject.0")}
                     {...a11yProps(3)}
                   />
                   <Tab
-                    sx={{
-                      minHeight: "66px",
-                      zIndex: "1",
-                      fontWeight: "500",
-                      fontSize: "14px",
-                      textTransform: "uppercase",
-                      color: "#1b1b1b",
-                    }}
+                    component={TabDiv}
+                    // sx={{
+                    //   minHeight: "66px",
+                    //   zIndex: "1",
+                    //   fontWeight: "500",
+                    //   fontSize: "14px",
+                    //   textTransform: "uppercase",
+                    //   color: "#1b1b1b",
+                    // }}
                     label={t("OurProject.0")}
                     {...a11yProps(4)}
                   />
                   <Tab
-                    sx={{
-                      minHeight: "66px",
-                      zIndex: "1",
-                      fontWeight: "500",
-                      fontSize: "14px",
-                      textTransform: "uppercase",
-                      color: "#1b1b1b",
-                    }}
+                    component={TabDiv}
+                    // sx={{
+                    //   minHeight: "66px",
+                    //   zIndex: "1",
+                    //   fontWeight: "500",
+                    //   fontSize: "14px",
+                    //   textTransform: "uppercase",
+                    //   color: "#1b1b1b",
+                    // }}
                     label={t("OurProject.0")}
                     {...a11yProps(5)}
                   />
                   <Tab
-                    sx={{
-                      minHeight: "66px",
-                      zIndex: "1",
-                      fontWeight: "500",
-                      fontSize: "14px",
-                      textTransform: "uppercase",
-                      color: "#1b1b1b",
-                    }}
+                    component={TabDiv}
+                    // sx={{
+                    //   minHeight: "66px",
+                    //   zIndex: "1",
+                    //   fontWeight: "500",
+                    //   fontSize: "14px",
+                    //   textTransform: "uppercase",
+                    //   color: "#1b1b1b",
+                    // }}
                     label={t("OurProject.0")}
                     {...a11yProps(6)}
                   />
