@@ -32,12 +32,12 @@ function Header() {
                 </NavLink>
               </li>
               <li>
-                <NavLink className='links' to={"/"}>
+                <NavLink className='links' to={"/aboutUs"}>
                   <p>{t("Header.1")}</p>
                 </NavLink>
               </li>
               <li>
-                <NavLink className='links' to={"/"}>
+                <NavLink className='links' to={"/aboutUs"}>
                   <p>{t("Header.2")}</p>
                 </NavLink>
               </li>
@@ -47,12 +47,12 @@ function Header() {
                 </NavLink>
               </li>
               <li>
-                <NavLink className='links' to={"/"}>
+                <NavLink className='links' to={"/portfolio"}>
                   <p>{t("Header.4")}</p>
                 </NavLink>
               </li>
               <li>
-                <NavLink className='links' to={"/"}>
+                <NavLink className='links' to={"/addinterior"}>
                   <p>{t("Header.5")}</p>
                 </NavLink>
               </li>

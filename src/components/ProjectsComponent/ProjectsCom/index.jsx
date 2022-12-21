@@ -1,7 +1,7 @@
 import React from "react";
 import { Section, BeforeContainer } from "./styled-index";
 import { Row, Col } from "react-grid-system";
-import TwentyTwenty from "react-twentytwenty";
+import TwentyTwenty from "react-twentytwenty"
 import "./twentytwenty.css";
 
 import After from "../../../assets/image/after.png";
