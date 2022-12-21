@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import beforeIcon from '../../../assets/image/beforeVSafter/icons.svg'
 export const Section = styled.div`
   padding: 60px 0;
 `;
@@ -23,9 +23,22 @@ export const BeforeContainer = styled.div`
   .slider {
     height: 557px;
     width: 100px;
-    width: 2px;
+    width: 3px;
     z-index: 1;
     background: #fff;
+    position: relative;
+
+    ::before{
+      content: '';
+      position: absolute;
+      background-image: url(${beforeIcon});
+      width: 63px;
+      height: 63px;
+      border-radius: 50%;
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
     @media only screen and (max-width: 768px) {
       height: 360px;
@@ -78,5 +91,11 @@ export const BeforeContainer = styled.div`
     /* width: 100%; */
     height: 100%;
     padding: 10px;
+    margin: 0 auto;
+
+    img{
+      margin: 10px 0;
+      width: 90%;
+    }
   }
 `;

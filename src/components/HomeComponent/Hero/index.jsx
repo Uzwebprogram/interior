@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { WrapperContainer } from "../../../style-App";
 import {
   Section,
@@ -24,9 +24,9 @@ import CommonHero from "../../common/CommonHero";
 import heroBg from "../../../assets/image/hero.png";
 
 const Hero = () => {
+  const [open, setOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const handleOpen = () => setOpen(true);
-  const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(false);
   const [bg, setBg] = useState(heroBg);
   return (
@@ -36,48 +36,100 @@ const Hero = () => {
         title2={t("Hero.1")}
         text={t("Hero.2")}
         btnText={t("Hero.3")}
-        setOpen={setOpen}
+        setOpen={handleOpen}
         isTitle={true}
+        isButton={true}
         bg={bg}
+      />
+      
+      <ModalCommon
+        width={550}
+        height={450}
+        handleClose={handleClose}
+        open={open}
       >
-        <ModalCommon width={550} handleClose={handleClose} open={open}>
-          <ModalHeader>
-            <h2>{t("HeroModal.0")}</h2>
-            <p>{t("HeroModal.1")}</p>
-          </ModalHeader>
-          <ModalBody>
-            <Form>
-              <CommonInput
-                title={t("HeroModal.2")}
-                placeholder={t("HeroModal.3")}
-                type={"text"}
-              />
-              <CommonInput
-                title={t("HeroModal.4")}
-                placeholder={"+998 90 000 00 00"}
-                type={"tel"}
-              />
+        <ModalHeader>
+          <h2>{t("HeroModal.0")}</h2>
+          <p>{t("HeroModal.1")}</p>
+        </ModalHeader>
+        <ModalBody>
+          <Form>
+            <CommonInput
+              title={t("HeroModal.2")}
+              placeholder={t("HeroModal.3")}
+              type={"text"}
+            />
+            <CommonInput
+              title={t("HeroModal.4")}
+              placeholder={"+998 90 000 00 00"}
+              type={"tel"}
+            />
+            <div className="radio-wrapper">
+              
+              <h4>{t("HeroModal.5")}</h4>
 
-              <div className="">
-                <h4>{t("HeroModal.5")}</h4>
-                <FormControl>
-                  <RadioGroup
-                    aria-labelledby="demo-radio-buttons-group-label"
-                    defaultValue={t("HeroModal.6")}
-                    name="radio-buttons-group"
-                  >
-                    <FormControlLabel
-                      value={t("HeroModal.6")}
-                      control={<Radio />}
-                      label={t("HeroModal.6")}
-                    />
-                  </RadioGroup>
-                </FormControl>
+              <div className="radioGruop">
+                <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label>{t("HeroModal.6")}</label>
               </div>
-            </Form>
-          </ModalBody>
-        </ModalCommon>
-      </CommonHero>
+              <div className="radioGruop">
+                 <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label>{t("HeroModal.7")}</label>
+              </div>
+              <div className="radioGruop">
+                <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label>{t("HeroModal.8")}</label>
+              </div>
+             
+            </div>
+
+            <div className="radio-wrapper">
+              <h4>{t("HeroModal.9")}</h4>
+              <div className="radioGruop">
+              <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label>{t("HeroModal.10")}</label>
+              </div>
+              <div className="radioGruop">
+              <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label>{t("HeroModal.11")}</label>
+              </div>
+            </div>
+
+            <div className="radio-wrapper">
+              <h4>{t("HeroModal.12")}</h4>
+              <div className="radioGruop">
+              <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label>{t("HeroModal.13")}</label>
+              </div>
+              <div className="radioGruop">
+              <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label>{t("HeroModal.14")}</label>
+              </div>
+              <div className="radioGruop">
+              <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label>{t("HeroModal.15")}</label>
+              </div>
+              <div className="radioGruop">
+              <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label>{t("HeroModal.16")}</label>
+              </div>
+              <div className="radioGruop">
+              <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <label>{t("HeroModal.17")}</label>
+              </div>
+            </div>
+            <div className="radio-wrapper">
+              <h4>{t("HeroModal.18")}</h4>
+              <textarea
+                width="100%"
+                cols="30"
+                rows="5"
+                placeholder={t("HeroModal.18")}
+              ></textarea>
+            </div>
+          </Form>
+        </ModalBody>
+      </ModalCommon>
     </>
   );
 };
