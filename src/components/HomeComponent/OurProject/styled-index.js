@@ -6,11 +6,9 @@ export const TabDiv = styled.div`
   font-weight: 500 !important;
   font-size: 14px !important;
   text-transform: uppercase;
-  /* color: #1b1b1b ; */
+  color: red;
   min-height: 66px !important;
-  .css-1q2h7u5.Mui-selected {
-    color: #fff !important;
-  }
+
   /* .Mui-selected{
     color: red;
   } */
@@ -21,12 +19,22 @@ export const BigTabs = styled.div`
   width: 550px !important;
   max-width: 550px;
   color: #fff;
+  .tabsWrap {
+    @media only screen and (max-width: 768px) {
+      width: 100% !important;
+      height: 338px !important;
+    }
+  }
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #fff !important;
+  }
 
   .MuiTabs-indicator {
     width: 100%;
     background: #000000;
     color: #fff !important;
   }
+
   .css-1n6uhfl.Mui-disabled,
   .css-1n6uhfl,
   .css-1ehaqqx-MuiButtonBase-root-MuiTabScrollButton-root {
@@ -100,7 +108,7 @@ export const Section = styled.div`
       font-weight: 500 !important;
       font-size: 14px !important;
       text-transform: uppercase; */
-      color: #1b1b1b !important;
+      /* color: #1b1b1b !important; */
       /* min-height: 66px !important; */
 
       @media only screen and (max-width: 768px) {
@@ -134,10 +142,10 @@ export const Section = styled.div`
       height: 100% !important;
     }
     .tabsWrap {
-      @media only screen and (max-width: 768px) {
+      /* @media only screen and (max-width: 768px) {
         width: 100% !important;
         height: 338px !important;
-      }
+      } */
     }
     .tabWrapper {
       height: 330px !important;
