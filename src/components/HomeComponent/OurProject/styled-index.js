@@ -25,7 +25,8 @@ export const BigTabs = styled.div`
       height: 338px !important;
     }
   }
-  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected,
+  .css-1q2h7u5.Mui-selected {
     color: #fff !important;
   }
 
