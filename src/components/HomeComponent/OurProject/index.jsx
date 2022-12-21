@@ -1,8 +1,10 @@
 import React from "react";
 import { Col, Row } from "react-grid-system";
 import { WrapperContainer } from "../../../style-App";
-import { Section } from "./styled-index";
+import { Section, TabDiv } from "./styled-index";
 import { useTranslation } from "react-i18next";
+import './styled.css'
+
 
 // Mui tabs import
 import PropTypes from "prop-types";
@@ -10,7 +12,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { t } from "i18next";
 // Mui tabs import end
 
 function TabPanel(props) {
@@ -26,7 +27,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography sx={{height: '100%'}}>{children}</Typography>
+          <Typography sx={{ height: "100%" }}>{children}</Typography>
         </Box>
       )}
     </div>
@@ -77,35 +78,30 @@ const OurProject = () => {
                     borderLeft: 1,
                     borderColor: "#fff",
                     maxWidth: "550px",
-                    width: '550px',
-                    margin: '0 auto',
+                    width: "550px",
+                    margin: "0 auto",
                     borderRight: "0",
                     borderBottom: "0",
                     borderTop: "0",
+                    zIndex: "1",
+                    
+
+                    span: {
+                      width: "100%",
+                      // color: "#fff"
+                    },
                   }}
                   className="tabsWrap"
                 >
                   <Tab
-                    sx={{
-                      minHeight: "66px",
-                      zIndex: "1",
-                      fontWeight: "500",
-                      fontSize: "14px",
-                      textTransform: "uppercase",
-                      color: "#1b1b1b",
-                    }}
+                  component={TabDiv}
+                   
                     label={t("OurProject.0")}
                     {...a11yProps(0)}
                   />
                   <Tab
-                    sx={{
-                      minHeight: "66px",
-                      zIndex: "1",
-                      fontWeight: "500",
-                      fontSize: "14px",
-                      textTransform: "uppercase",
-                      color: "#1b1b1b",
-                    }}
+                  component={TabDiv}
+                    
                     label={t("OurProject.0")}
                     {...a11yProps(1)}
                   />

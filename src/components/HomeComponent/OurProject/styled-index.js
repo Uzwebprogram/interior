@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const TabDiv = styled.div`
+  z-index: 1 !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  text-transform: uppercase;
+  color: #1b1b1b !important;
+  min-height: 66px !important;
+`;
+
 export const Section = styled.div`
   padding: 20px 0;
   .row {
@@ -13,7 +23,7 @@ export const Section = styled.div`
       width: 100% !important;
       padding: 0 !important;
     }
- 
+
     h2 {
       font-style: normal;
       font-weight: 300;
@@ -41,8 +51,8 @@ export const Section = styled.div`
       display: none !important;
     }
     .css-10d9dml-MuiTabs-indicator {
-      width: 100% !important;
-      background: #000000 !important;
+      /* width: 100% !important; */
+      /* background: #000000 !important; */
     }
     .css-1n3h4wo {
       display: flex !important;
@@ -113,7 +123,6 @@ export const Section = styled.div`
         height: 500px !important;
         flex-direction: column !important;
       }
-      
     }
   }
 `;
