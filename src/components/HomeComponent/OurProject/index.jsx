@@ -78,6 +78,7 @@ const OurProject = () => {
                     borderColor: "#fff",
                     maxWidth: "550px",
                     width: '550px',
+                    margin: '0 auto',
                     borderRight: "0",
                     borderBottom: "0",
                     borderTop: "0",
