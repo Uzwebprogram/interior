@@ -11,7 +11,7 @@ export const BeforeContainer = styled.div`
 
   .twenty-img {
     width: 100%;
-    height: 557px;
+    height: 100vh !important;
     @media only screen and (max-width: 768px) {
       height: 360px;
     }
@@ -21,7 +21,7 @@ export const BeforeContainer = styled.div`
   }
 
   .slider {
-    height: 557px;
+    height: 100vh;
     width: 100px;
     width: 3px;
     z-index: 1;
@@ -64,7 +64,7 @@ export const BeforeContainer = styled.div`
   .white-col {
     background: #fff;
     padding: 0 !important;
-    height: 557px;
+    height: 100vh;
     @media only screen and (max-width: 768px) {
       height: auto;
     }
