@@ -8,15 +8,17 @@ export const TabDiv = styled.div`
   text-transform: uppercase;
   color: #1b1b1b !important;
   min-height: 66px !important;
+  background: #000;
 `;
 export const BigTabs = styled.div`
   border: none !important;
   border-left: 1px solid #fff !important;
   width: 550px !important;
+  
  
-  span.css-10d9dml-MuiTabs-indicator {
-    width: 100% !important;
-    background: #000000 !important;
+  .MuiTabs-indicator  {
+    width: 100%;
+    background: #000000 ;
   }
 `;
 
