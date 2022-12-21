@@ -83,13 +83,90 @@ const OurProject = () => {
                   }}
                   className="tabsWrap"
                 >
-                  <Tab label={t("OurProject.0")} {...a11yProps(0)} />
-                  <Tab label={t("OurProject.0")} {...a11yProps(1)} />
-                  <Tab label={t("OurProject.0")} {...a11yProps(2)} />
-                  <Tab label={t("OurProject.0")} {...a11yProps(3)} />
-                  <Tab label={t("OurProject.0")} {...a11yProps(4)} />
-                  <Tab label={t("OurProject.0")} {...a11yProps(5)} />
-                  <Tab label={t("OurProject.0")} {...a11yProps(6)} />
+                  <Tab
+                    sx={{
+                      minHeight: "66px",
+                      zIndex: "1",
+                      fontWeight: "500",
+                      fontSize: "14px",
+                      textTransform: "uppercase",
+                      color: "#1b1b1b",
+                    }}
+                    label={t("OurProject.0")}
+                    {...a11yProps(0)}
+                  />
+                  <Tab
+                    sx={{
+                      minHeight: "66px",
+                      zIndex: "1",
+                      fontWeight: "500",
+                      fontSize: "14px",
+                      textTransform: "uppercase",
+                      color: "#1b1b1b",
+                    }}
+                    label={t("OurProject.0")}
+                    {...a11yProps(1)}
+                  />
+                  <Tab
+                    sx={{
+                      minHeight: "66px",
+                      zIndex: "1",
+                      fontWeight: "500",
+                      fontSize: "14px",
+                      textTransform: "uppercase",
+                      color: "#1b1b1b",
+                    }}
+                    label={t("OurProject.0")}
+                    {...a11yProps(2)}
+                  />
+                  <Tab
+                    sx={{
+                      minHeight: "66px",
+                      zIndex: "1",
+                      fontWeight: "500",
+                      fontSize: "14px",
+                      textTransform: "uppercase",
+                      color: "#1b1b1b",
+                    }}
+                    label={t("OurProject.0")}
+                    {...a11yProps(3)}
+                  />
+                  <Tab
+                    sx={{
+                      minHeight: "66px",
+                      zIndex: "1",
+                      fontWeight: "500",
+                      fontSize: "14px",
+                      textTransform: "uppercase",
+                      color: "#1b1b1b",
+                    }}
+                    label={t("OurProject.0")}
+                    {...a11yProps(4)}
+                  />
+                  <Tab
+                    sx={{
+                      minHeight: "66px",
+                      zIndex: "1",
+                      fontWeight: "500",
+                      fontSize: "14px",
+                      textTransform: "uppercase",
+                      color: "#1b1b1b",
+                    }}
+                    label={t("OurProject.0")}
+                    {...a11yProps(5)}
+                  />
+                  <Tab
+                    sx={{
+                      minHeight: "66px",
+                      zIndex: "1",
+                      fontWeight: "500",
+                      fontSize: "14px",
+                      textTransform: "uppercase",
+                      color: "#1b1b1b",
+                    }}
+                    label={t("OurProject.0")}
+                    {...a11yProps(6)}
+                  />
                 </Tabs>
                 <TabPanel value={value} index={0} className="tabpanel">
                   <iframe

@@ -60,13 +60,13 @@ export const Section = styled.div`
       color: #fff !important;
     }
     .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
-      z-index: 1 !important;
-      font-style: normal !important;
+      /* z-index: 1 !important; */
+      /* font-style: normal !important;
       font-weight: 500 !important;
       font-size: 14px !important;
       text-transform: uppercase;
-      color: #1b1b1b !important;
-      min-height: 66px !important;
+      color: #1b1b1b !important; */
+      /* min-height: 66px !important; */
 
       @media only screen and (max-width: 768px) {
         min-height: 40px !important;
