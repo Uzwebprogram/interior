@@ -76,7 +76,8 @@ const OurProject = () => {
                   sx={{
                     borderLeft: 1,
                     borderColor: "#fff",
-                    width: "550px",
+                    maxWidth: "550px",
+                    width: '550px',
                     borderRight: "0",
                     borderBottom: "0",
                     borderTop: "0",
