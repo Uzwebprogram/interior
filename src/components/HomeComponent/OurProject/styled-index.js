@@ -19,6 +19,7 @@ export const BigTabs = styled.div`
   border: none !important;
   border-left: 1px solid #fff !important;
   width: 550px !important;
+  max-width: 550px;
   color: #fff;
 
   .MuiTabs-indicator {
