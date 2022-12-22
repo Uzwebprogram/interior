@@ -65,6 +65,7 @@ const OurProject = () => {
                   flexGrow: 1,
                   bgcolor: "background.paper",
                   display: "flex",
+                  height: "90vh",
                 }}
               >
                 <Tabs
@@ -74,98 +75,71 @@ const OurProject = () => {
                   value={value}
                   onChange={handleChange}
                   aria-label="Vertical tabs example"
-                  // sx={{
-                  //   borderLeft: 1,
-                  //   borderColor: "#fff",
-                  //   maxWidth: "550px",
-                  //   width: "550px",
-                  //   margin: "0 auto",
-                  //   borderRight: "0",
-                  //   borderBottom: "0",
-                  //   borderTop: "0",
-                  //   zIndex: "1",
-
-                  //   span: {
-                  //     width: "100%",
-                  //     color: "#fff"
-                  //   },
-                  // }}
                   className="tabsWrap"
+                  sx={{
+                    width: "100%",
+                    span: { width: "100%" },
+                  }}
                 >
-                  <Tab
+                  <Tab 
                     component={TabDiv}
                     label={t("OurProject.0")}
                     {...a11yProps(0)}
                   />
-                  <Tab
+                  <Tab 
                     component={TabDiv}
                     label={t("OurProject.0")}
                     {...a11yProps(1)}
                   />
-                  <Tab
+                  <Tab 
                     component={TabDiv}
-                    // sx={{
-                    //   minHeight: "66px",
-                    //   zIndex: "1",
-                    //   fontWeight: "500",
-                    //   fontSize: "14px",
-                    //   textTransform: "uppercase",
-                    //   color: "#1b1b1b",
-                    // }}
                     label={t("OurProject.0")}
                     {...a11yProps(2)}
                   />
                   <Tab
                     component={TabDiv}
-                    // sx={{
-                    //   minHeight: "66px",
-                    //   zIndex: "1",
-                    //   fontWeight: "500",
-                    //   fontSize: "14px",
-                    //   textTransform: "uppercase",
-                    //   color: "#1b1b1b",
-                    // }}
                     label={t("OurProject.0")}
                     {...a11yProps(3)}
                   />
-                  <Tab
+                  <Tab 
                     component={TabDiv}
-                    // sx={{
-                    //   minHeight: "66px",
-                    //   zIndex: "1",
-                    //   fontWeight: "500",
-                    //   fontSize: "14px",
-                    //   textTransform: "uppercase",
-                    //   color: "#1b1b1b",
-                    // }}
                     label={t("OurProject.0")}
                     {...a11yProps(4)}
                   />
-                  <Tab
+                  <Tab 
                     component={TabDiv}
-                    // sx={{
-                    //   minHeight: "66px",
-                    //   zIndex: "1",
-                    //   fontWeight: "500",
-                    //   fontSize: "14px",
-                    //   textTransform: "uppercase",
-                    //   color: "#1b1b1b",
-                    // }}
                     label={t("OurProject.0")}
                     {...a11yProps(5)}
                   />
                   <Tab
                     component={TabDiv}
-                    // sx={{
-                    //   minHeight: "66px",
-                    //   zIndex: "1",
-                    //   fontWeight: "500",
-                    //   fontSize: "14px",
-                    //   textTransform: "uppercase",
-                    //   color: "#1b1b1b",
-                    // }}
                     label={t("OurProject.0")}
                     {...a11yProps(6)}
+                  />
+                  <Tab 
+                    component={TabDiv}
+                    label={t("OurProject.0")}
+                    {...a11yProps(7)}
+                  />
+                  <Tab 
+                    component={TabDiv}
+                    label={t("OurProject.0")}
+                    {...a11yProps(8)}
+                  />
+                  <Tab 
+                    component={TabDiv}
+                    label={t("OurProject.0")}
+                    {...a11yProps(9)}
+                  />
+                  <Tab 
+                    component={TabDiv}
+                    label={t("OurProject.0")}
+                    {...a11yProps(10)}
+                  />
+                  <Tab 
+                    component={TabDiv}
+                    label={t("OurProject.0")}
+                    {...a11yProps(11)}
                   />
                 </Tabs>
                 <TabPanel value={value} index={0} className="tabpanel">
@@ -235,6 +209,61 @@ const OurProject = () => {
                   ></iframe>
                 </TabPanel>
                 <TabPanel value={value} index={6} className="tabpanel">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/y7_Spedf2BI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </TabPanel>
+                <TabPanel value={value} index={7} className="tabpanel">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/y7_Spedf2BI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </TabPanel>
+                <TabPanel value={value} index={8} className="tabpanel">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/y7_Spedf2BI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </TabPanel>
+                <TabPanel value={value} index={9} className="tabpanel">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/y7_Spedf2BI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </TabPanel>
+                <TabPanel value={value} index={10} className="tabpanel">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/y7_Spedf2BI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </TabPanel>
+                <TabPanel value={value} index={11} className="tabpanel">
                   <iframe
                     width="100%"
                     height="100%"

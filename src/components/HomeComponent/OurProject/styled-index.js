@@ -9,9 +9,9 @@ export const TabDiv = styled.div`
   color: red;
   min-height: 66px !important;
 
-  /* .Mui-selected{
-    color: red;
-  } */
+  @media only screen and (max-width: 583px) {
+    width: 100% !important;
+  }
 `;
 export const BigTabs = styled.div`
   border: none !important;
@@ -19,21 +19,25 @@ export const BigTabs = styled.div`
   width: 550px !important;
   max-width: 550px;
   color: #fff;
-  .tabsWrap {
     @media only screen and (max-width: 768px) {
+      max-width: 100% !important;
       width: 100% !important;
+      min-width: 100% !important;
       height: 338px !important;
     }
-  }
   .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected,
   .css-1q2h7u5.Mui-selected {
     color: #fff !important;
+    width: 100% !important;
   }
 
   .MuiTabs-indicator {
-    width: 100%;
+    width: 100% !important;
     background: #000000;
     color: #fff !important;
+    @media only screen and (max-width: 583px) {
+    width: 100% !important;
+  }
   }
 
   .css-1n6uhfl.Mui-disabled,
@@ -114,6 +118,9 @@ export const Section = styled.div`
 
       @media only screen and (max-width: 768px) {
         min-height: 40px !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
       }
     }
     .css-35zqo5-MuiTabs-root {
@@ -149,7 +156,7 @@ export const Section = styled.div`
       } */
     }
     .tabWrapper {
-      height: 330px !important;
+      /* height: 330px !important; */
       border: 1px solid #fff !important;
       display: flex;
       flex-direction: row-reverse;

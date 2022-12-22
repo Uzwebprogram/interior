@@ -26,7 +26,7 @@ const AboutUsHero = () => {
         isTitle={true}
         isButton={true}
         setOpen={handleOpen}
-        style={{ padding: "16px 0" }}
+        style={{ padding: "16px 0", height: '80vh' }}
       />
       <ModalCommon
         width={550}

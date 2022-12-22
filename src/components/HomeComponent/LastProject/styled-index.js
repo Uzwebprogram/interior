@@ -29,10 +29,12 @@ export const Section = styled.div`
     padding: 0 6px !important;
     img {
       width: 100%;
+      height: 100%;
     }
 
     .col-content {
       position: relative;
+      height: 500px;
     }
     .col-text {
       position: absolute;
