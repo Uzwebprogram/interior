@@ -35,6 +35,11 @@ export const Section = styled.div`
     .col-content {
       position: relative;
       height: 500px;
+
+      @media only screen and (max-width: 425px) {
+        height: auto;
+      }
+      
     }
     .col-text {
       position: absolute;

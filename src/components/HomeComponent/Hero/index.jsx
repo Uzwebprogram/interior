@@ -43,7 +43,7 @@ const Hero = () => {
       />
       
       <ModalCommon
-        width={550}
+        width={"auto"}
         height={450}
         handleClose={handleClose}
         open={open}
