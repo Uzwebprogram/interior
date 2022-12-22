@@ -29,7 +29,7 @@ const AboutUsHero = () => {
         style={{ padding: "16px 0", height: '80vh' }}
       />
       <ModalCommon
-        width={550}
+        width={"auto"}
         height={450}
         handleClose={handleClose}
         open={open}
