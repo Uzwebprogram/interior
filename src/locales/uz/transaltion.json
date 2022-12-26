@@ -1,5 +1,124 @@
 {
-    "Header":{
-        "0":"Salom"
-    }
+  "Header": {
+    "0": "asosiy",
+    "1": "tijorat",
+    "2": "turar joy",
+    "3": "oldin va keyin",
+    "4": "blog",
+    "5": "Sotish",
+    "6": "kontaktlar"
+  },
+
+  "Example": {
+    "0": "joy, masalan, oshxona yoki koridor",
+    "1": "Gollandiyada ajoyib loyiha yakunlandi - 3 qavatli uy. Yorqin va estetik zamonaviy interyer.",
+    "2": "Oshxona-yashash xonasi keng bo'lib, ranglar va pardozlash materiallari kontrasti asosida qurilgan. Ovqatlanish xonasi juda oqlangan va atmosfera. Ovqatlanish maydoni ustidagi qandil interyerga nafislik qo'shadi.",
+    "3": "Mehmon hammomi yorug 'katta oyna va yorug'lik bilan bo'sh joyni vizual ravishda kengaytiradi.",
+    "4": "Ushbu loyihadagi asosiy nuqta amaliylikdir. Ortiqcha narsalar saqlash tizimlarining jabhalari orqasida ko'zdan yashiriladi. Shu tufayli ichki qism engil ko'rinadi, ortiqcha yuklanmagan.",
+    "5": "Zal - bu e'tibordan chetda qoldirib bo'lmaydigan makon. Biz uni iloji boricha ajoyib va ​​qulay qilishga harakat qildik, chunki zal butun interyerning birinchi taassurotidir.",
+    "6": "Yotoqxona neytral tonlarda boy rang aksanlari bilan amalga oshiriladi. Banyoda toza chiziqlar, grafikalar va funksionallik mavjud.",
+    "7": "Ushbu loyihada hatto kinozalli zal mavjud. Tomosha qilishdan zavqlaning!",
+    "8": "Joylashuvlar:",
+    "9": "Toshkent",
+    "10": "Maydon:",
+    "11": "245 kv.m",
+    "12": "2022",
+    "13": "Uslub:",
+    "14": "Zamonaviy",
+    "15": "Dizayn va 3D vizualizatsiya:",
+    "16": "PROSVIRIN DIZAYN"
+  },
+
+  "AboutUs": {
+    "0": "O'zingizning jamoat interyeringizni yarating"
+  },
+  "GridImg": {
+    "0": "tijorat interyerlari"
+  },
+  "ContactModal": {
+    "0": "Maslahatga buyurtma berish",
+    "1": "Menejer tez orada siz bilan bog'lanadi",
+    "2": "ismingiz",
+    "3": "ism-familiya",
+    "4": "Telefon raqamingiz"
+  },
+  "Footer": {
+    "0": "Maslahatga buyurtma berish",
+    "1": "Buyurtma",
+    "2": "Biz ichki dizayn xizmatlarining to'liq spektrini taqdim etamiz",
+    "3": "Navigatsiya",
+    "4": "Biz bilan bog'laning",
+    "5": "O'zbekiston, Toshkent, Navoiy ko'chasi 9.",
+    "6": "Elektron pochta manzili",
+    "7": "Obuna bo'lish"
+  },
+  "Contact": {
+    "0": "Kontaktlar"
+  },
+  "Vacancy": {
+    "0": "Bo'sh joy"
+  },
+  "notFound": {
+    "0": "SAHIFA TOPILMADIGAN ORTAGA O'RING",
+    "1": "ORTAGA"
+  },
+  "About": {
+    "0": "bizning xodimlarimiz",
+    "1": "BIZ UYLARNI ICHKI BORISHINI BERISH UCHUN MUMKIN JAMOAMIZ"
+  },
+  "AddInterior": {
+    "0": "Biz dunyoning istalgan nuqtasida individual premium interyer loyihasini yaratamiz",
+    "1": "BIZ ELITA INTERIORLARNI YARATAMIZ"
+  },
+  "add_interior": {
+    "0": "INTERIOR DIZAYN XIZMATLARI",
+    "1": "Ta'mirlashni qo'llab-quvvatlash xizmatlari:"
+  },
+  "Hero": {
+    "0": "LUXHOUSEGA Xush kelibsiz",
+    "1": "ORZULARINGIZDAGI UYINGIZNING ELGANT INTERERIYERINI YARATING",
+    "2": "Toshkentdagi kvartirangizning interyer dizaynini ishlab chiqamiz va orzuingizdek ta’mirlaymiz",
+    "3": "Loyihani hisoblash"
+  },
+  "HeroModal": {
+    "0": "Loyihani hisoblash",
+    "1": "Toshkent shahridagi binolaringizning loyihalash loyihasi narxini hisoblash uchun ma'lumotlarni kiriting",
+    "2": "ismingiz",
+    "3": "ism-familiya",
+    "4": "Telefon raqamingiz",
+    "5": "Xona turini tanlang",
+    "6": "Uy",
+    "7": "Kvartira",
+    "8": "Tijorat ob'ekti",
+    "9": "Uy-joy turi",
+    "10": "Yangi bino",
+    "11": "Resellerlar",
+    "12": "Xona turini tanlang",
+    "13": "50 kv.m gacha",
+    "14": "250 kv.m gacha",
+    "15": "500 kv.m gacha",
+    "16": "500 kv.m dan ortiq",
+    "17": "Qo'shimcha savollar va sharhlar",
+    "18": "sharhlar",
+    "19": "Hisoblash"
+  },
+  "Interier": {
+    "0": "tijorat interyerlari",
+    "1": "yashash interyerlari"
+  },
+  "OurProject": {
+    "0": "bizning tugallangan loyihalarimiz!"
+  },
+  "Custumer": {
+    "0": "Mijoz sharhlari",
+    "1": "Biz loyiha loyihasini ishlab chiqishni, arxitektura nazoratini, qurilish va ta'mirlash ishlarini, aksessuarlar va mebellarni tanlashni o'z zimmamizga olamiz"
+  },
+  "LastProject": {
+    "0": "So'nggi loyihalar",
+    "1": "Keling, egallab olamiz",
+    "2": "Biz dizayn, interyer va "
+  },
+  "Trusted": {
+    "0": "bizga ishon"
+  }
 }

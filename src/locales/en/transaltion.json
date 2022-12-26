@@ -1,5 +1,124 @@
 {
-    "Header":{
-        "0":"Hello"
-    }
+  "Header": {
+    "0": "main",
+    "1": "commercial",
+    "2": "residential",
+    "3": "before and after",
+    "4": "blog",
+    "5": "Sale",
+    "6": "contacts"
+  },
+
+  "Example": {
+    "0": "place e.g. kitchen or hallway",
+    "1": "Completed a stunning project in the Netherlands - 3-storey house. Bright and aesthetic modern interior.",
+    "2": "The kitchen-living room is spacious and built on the contrast of colors and finishing materials. The dining room is very elegant and atmospheric. The chandelier above the dining area adds sophistication to the interior.",
+    "3": "The guest bathroom is bright with a large mirror and lighting that visually expands the space.",
+    "4": "The key point in this project is practicality. Everything superfluous is hidden from view behind the facades of storage systems. Thanks to this, the interior looks light, not overloaded.",
+    "5": "The hall is a space that cannot be ignored. We tried to make it as spectacular and comfortable as possible, since the hall is the first impression of the entire interior.",
+    "6": "The bedroom is done in neutral tones with rich color accents. The bathroom has clean lines, graphics and functionality.",
+    "7": "This project even has a lounge with a cinema hall. Enjoy watching!",
+    "8": "Locations:",
+    "9": "Tashkent",
+    "10": "Area:",
+    "11": "245 sq.m",
+    "12": "2022",
+    "13": "Style:",
+    "14": "Modern",
+    "15": "Design and 3D visualization:",
+    "16": "PROSVIRIN DESIGN"
+  },
+
+  "AboutUs": {
+    "0": "Create your own public interior"
+  },
+  "GridImg": {
+    "0": "commercial interiors"
+  },
+  "ContactModal": {
+    "0": "Order a consultation",
+    "1": "The manager will contact you shortly",
+    "2": "your name",
+    "3": "first name-surname",
+    "4": "Your phone number"
+  },
+  "Footer": {
+    "0": "Order a consultation",
+    "1": "Order",
+    "2": "We provide a full range of interior design services",
+    "3": "Navigation",
+    "4": "Contact us",
+    "5": "Uzbekistan, Tashkent, Navoi st. 9.",
+    "6": "Email address",
+    "7": "Subscribe"
+  },
+  "Contact": {
+    "0": "Contacts"
+  },
+  "Vacancy": {
+    "0": "Vacancy"
+  },
+  "notFound": {
+    "0": "PAGE NOT FOUND PLEASE GO BACK",
+    "1": "GO BACK"
+  },
+  "About": {
+    "0": "our employees",
+    "1": "WE ARE THE PERFECT TEAM FOR HOME INTERIOR FINISHING"
+  },
+  "AddInterior": {
+    "0": "I created an individual project, interior, premium class, online and lyuboy tochke mira",
+    "1": "WE CREATE ELITE INTERIORS"
+  },
+  "add_interior": {
+    "0": "INTERIOR DESIGN SERVICES",
+    "1": "Repair Support Services:"
+  },
+  "Hero": {
+    "0": "WELCOME TO LUXHOUSE",
+    "1": "CREATE THE ELEGANT INTERIOR OF YOUR DREAM HOME",
+    "2": "We will develop an interior design and make a dream renovation in your apartment in Tashkent.",
+    "3": "Calculate project"
+  },
+  "HeroModal": {
+    "0": "Calculate project",
+    "1": "Enter the data to calculate the cost of the design project of your premises in Tashkent",
+    "2": "your name",
+    "3": "first name-surname",
+    "4": "Your phone number",
+    "5": "Select room type",
+    "6": "Home",
+    "7": "Apartment",
+    "8": "Commercial object",
+    "9": "Housing type",
+    "10": "New building",
+    "11": "Resellers",
+    "12": "Select room type",
+    "13": "up to 50 sq.m",
+    "14": "up to 250 sq.m",
+    "15": "up to 500 sq.m",
+    "16": "more than 500 sq.m",
+    "17": "Additional questions and comments",
+    "18": "comments",
+    "19": "Calculate"
+  },
+  "Interier": {
+    "0": "commercial interiors",
+    "1": "living interiors"
+  },
+  "OurProject": {
+    "0": "our completed projects!"
+  },
+  "Custumer": {
+    "0": "Customer reviews",
+    "1": "We will undertake the development of the design of the project, architectural supervision, construction and repair work, selection of accessories and furniture"
+  },
+  "LastProject": {
+    "0": "Recent projects",
+    "1": "Let's take over",
+    "2": "We will develop design, interior and "
+  },
+  "Trusted": {
+    "0": "trust us"
+  }
 }
