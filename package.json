@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^7.0.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
@@ -22,6 +23,7 @@
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
+    "react-tinder-card": "^1.6.2",
     "react-twentytwenty": "^1.2.1",
     "styled-components": "^5.3.6",
     "swiper": "^8.4.5",
