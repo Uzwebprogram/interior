@@ -1,14 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CommonHero from "../../components/common/CommonHero";
 import { Wrapper } from "./styled-index";
 import Background from "./../../assets/image/About/Background.png";
 import { WrapperContainer } from "../../style-App";
 import { useTranslation } from "react-i18next";
 import { Row, Col } from "react-grid-system";
+import { useDispatch, useSelector } from "react-redux";
+import { GetTeam } from "../../redux/team/index";
 function About() {
   const [bg, setBg] = useState(Background);
   const { t, i18n } = useTranslation();
-  const data = [1, 2, 3, 4, 5, 6];
+ const getTeam = useSelector((state) => state.team.getTeam?.Data);
+ const dispatch = useDispatch();
+ useEffect(() => {
+   dispatch(GetTeam());
+ }, []);
+ const LangVal = () => {
+  return window.localStorage.getItem("i18nextLng");
+};
   return (
     <>
       <CommonHero
@@ -23,16 +32,16 @@ function About() {
         <Wrapper>
           <h2>{t("About.0")}</h2>
           <Row>
-            {data.map((elem, index) => (
+            {getTeam.map((elem) => (
               <Col lg={4} md={12} className="Card">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjb-Jsep9tAcYMGcwnDZl9MuXwtJ87LMh-KkFZT04M9XQRs6I0mWi4GJcUD7bTPEOAXRU&usqp=CAU"
+                  src={elem.team_img}
                   alt=""
                 />
-                <h4>Елойр</h4>
+                <h4>{elem.team_name}</h4>
                 <div className="about">
                   <p>направление работы:</p>
-                  <span>дизайнер</span>
+                  <span>{elem.team_position}</span>
                 </div>
               </Col>
             ))}

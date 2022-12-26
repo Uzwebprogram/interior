@@ -59,6 +59,7 @@ export const Section = styled.div`
     .ant-tabs-nav {
       background: #fff;
       border: 1px solid #fff;
+      width: 350px;
       @media only screen and (max-width: 768px) {
         height: 100px;
         width: 100%;
@@ -76,7 +77,7 @@ export const Section = styled.div`
       font-size: 20px;
       line-height: 58px;
       text-transform: uppercase;
-      padding: 0 20px;
+      padding: 0 50px;
       width: 100%;
       color: #1b1b1b;
       @media only screen and (max-width: 768px) {
@@ -92,6 +93,7 @@ export const Section = styled.div`
       position: relative;
       z-index: 1;
       padding: 0;
+      width: 100%;
     }
     .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn::before {
       content: "";
