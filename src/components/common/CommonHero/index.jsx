@@ -31,7 +31,7 @@ const CommonHero = ({
               ) : null}
             </Col>
 
-            {isIcon ? <i class="bx bx-chevron-down"></i> : null}
+            {isIcon ? <i class='bx bxs-chevron-down bx-fade-up' ></i> : null}
           </Row>
         </WrapperContainer>
       </Section>
