@@ -1,5 +1,5 @@
 import React from 'react'
-import { Wrapper } from './styled-index'
+import { Wrapper, RowDiv } from './styled-index'
 import {Row , Col} from "react-grid-system"
 import { useTranslation } from 'react-i18next'
 function AddInteriorComponent() {
@@ -8,7 +8,7 @@ function AddInteriorComponent() {
   return (
     <Wrapper>
         <h2>{t("add_interior.0")}</h2>
-        <Row>
+        <Row component={RowDiv}>
                 {data.map((elem , index) => 
                 
                 <Col key={index} lg={3} md={12} className="ContainerCard">
@@ -34,7 +34,7 @@ function AddInteriorComponent() {
             </Col>)}
         </Row>
         <h2>{t("add_interior.1")}</h2>
-        <Row>
+        <Row component={RowDiv}>
           <Col className='Card' lg={4} md={12}>
             <p>Авторский надзор</p>
             <img src="https://thumb.cadbull.com/img/product_img/original/Home-Project-Design-AutoCAD-Drawing-File--Thu-Nov-2019-07-06-46.jpg" alt="" />

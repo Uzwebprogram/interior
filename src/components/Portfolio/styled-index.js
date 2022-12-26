@@ -21,7 +21,8 @@ export const Section = styled.div`
     object-fit: cover;
     }
     .CardsContainer{
-        margin-top: 40px;
+        /* margin-top: 40px; */
+        margin: 40px -15px 0 0 !important;
     }
     .card{
         display: flex;

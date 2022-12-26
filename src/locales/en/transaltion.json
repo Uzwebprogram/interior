@@ -95,12 +95,13 @@
     "11": "Resellers",
     "12": "Select room type",
     "13": "up to 50 sq.m",
-    "14": "up to 250 sq.m",
-    "15": "up to 500 sq.m",
-    "16": "more than 500 sq.m",
-    "17": "Additional questions and comments",
-    "18": "comments",
-    "19": "Calculate"
+    "14": "up to 100 sq.m",
+    "15": "up to 250 sq.m",
+    "16": "up to 500 sq.m",
+    "17": "more than 500 sq.m",
+    "18": "Additional questions and comments",
+    "19": "comments",
+    "20": "Calculate"
   },
   "Interier": {
     "0": "commercial interiors",

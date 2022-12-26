@@ -3,15 +3,17 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 
 
-function ModalCommon({ open, handleClose, children , width }){
+function ModalCommon({ open, height, handleClose, children , width }){
   const style = {
     position: "absolute",
-    top: "50%",
+    top: "55%",
     left: "50%",
     transform: "translate(-50%, -50%)",
     width: width,
+    height: height,
     bgcolor: "#000",
     border: "2px solid #000",
+    overflowY: "scroll",
     boxShadow: "0px 0px 10px 2px #ff800b",
     p: 2,
   };
