@@ -21,7 +21,7 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
     {
       id: 2,
       title: "Header.1",
-      link: "/projects",
+      link: "/aboutUs",
     },
     {
       id: 3,

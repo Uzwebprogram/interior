@@ -4,9 +4,11 @@ import {RouterData} from "./index-data"
 import Header from "../components/Header/index"
 import Footer from "../components/Footer"
 import Loader from "../components/loader"
+import FixedAnime from "../components/fixedAnime"
 function RouterComponent() {
   return (
     <>
+    <FixedAnime/>
     <Header/>
     <Routes>
     {RouterData.map(elem => 
