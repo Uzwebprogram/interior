@@ -1,22 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Section, BeforeContainer } from "./styled-index";
 import { Row, Col } from "react-grid-system";
-import TwentyTwenty from "react-twentytwenty"
+import TwentyTwenty from "react-twentytwenty";
+import { useDispatch, useSelector } from "react-redux";
 import "./twentytwenty.css";
+
+import { GetSingle } from "../../../redux/before-after";
 
 import After from "../../../assets/image/after.png";
 import Before from "../../../assets/image/hero.png";
 import icons1 from "../../../assets/image/beforeVSafter/icons1.png";
-import SkeletonCommon from "../../common/Skeleton";
 const arr = [1, 2, 3, 4];
 const ProjectsCom = () => {
+  const getSingle = useSelector((state) => state.single.getSingle?.Data);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(GetSingle());
+  }, []);
+  const LangVal = () => {
+    return window.localStorage.getItem("i18nextLng");
+  };
   return (
     <>
       <Section>
-        
         <BeforeContainer>
           <Row className="row">
-            {arr.map(() => (
+            {getSingle.map((elem, index) => (
               <Col lg={12} md={12} sm={12} className="big-col">
                 <Row className="small-row">
                   <Col className="col" lg={9} md={12} sm={12} sx={12}>
@@ -26,7 +35,7 @@ const ProjectsCom = () => {
                         // eslint-disable-next-line jsx-a11y/alt-text
                         <img
                           className="twenty-img"
-                          src={After}
+                          src={elem.single_img1}
                           width="100%"
                           height="557px"
                         />
@@ -34,7 +43,7 @@ const ProjectsCom = () => {
                       right={
                         // eslint-disable-next-line jsx-a11y/alt-text
                         <img
-                          src={Before}
+                          src={elem.single_img2}
                           className="twenty-img"
                           width="100%"
                           height="557px"
@@ -46,10 +55,27 @@ const ProjectsCom = () => {
                   </Col>
                   <Col className="white-col" lg={3} md={12} sm={12} sx={12}>
                     <div className="col-content">
-                      <h3>АКВАМАРИН</h3>
+                      <h3>
+                        {LangVal() == "ru" ? (
+                          <h3>{elem.single_title_ru}</h3>
+                        ) : LangVal() == "uz" ? (
+                          <h3>{elem.single_title_uz}</h3>
+                        ) : LangVal() == "en" ? (
+                          <h3>{elem.single_title_en}</h3>
+                        ) : (
+                          <h3>{elem.single_title_ru}</h3>
+                        )}
+                      </h3>
                       <p>
-                        Дизайнеры нашей студии оформили квартиру в башне
-                        «Федерация», Москва-Сити, Москва. Подробнее о проекте
+                        {LangVal() == "ru" ? (
+                          <p>{elem.single_description_ru}</p>
+                        ) : LangVal() == "uz" ? (
+                          <p>{elem.single_description_uz}</p>
+                        ) : LangVal() == "en" ? (
+                          <p>{elem.single_description_en}</p>
+                        ) : (
+                          <p>{elem.single_description_uz}</p>
+                        )}
                       </p>
                       <img src={icons1} alt="image" />
                     </div>
