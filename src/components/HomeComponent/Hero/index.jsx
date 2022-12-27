@@ -38,6 +38,7 @@ const Hero = () => {
         btnText={t("Hero.3")}
         setOpen={handleOpen}
         isTitle={true}
+        styleSection={{padding: "154px 0px",}}
         isButton={true}
         isIcon={true}
         bg={bg}

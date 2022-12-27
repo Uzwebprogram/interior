@@ -15,10 +15,11 @@ const CommonHero = ({
   isButton,
   isIcon,
   style,
+  styleSection
 }) => {
   return (
     <>
-      <Section bg={bg}>
+      <Section style={styleSection} bg={bg}>
         <WrapperContainer>
           <Row component={RowWrap}>
             <Col style={style} component={ColItem} lg={8} md={12} sm={12}>
