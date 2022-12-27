@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { NavLink, useNavigate } from "react-router-dom";
+import { Getcategories } from "../../../redux/about";
 import { Wrapper } from "./styled-index";
 
 function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
@@ -9,6 +11,13 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
     i18n.changeLanguage(lang);
     window.location.reload();
   };
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const HandleClickAbout = async (e) =>{
+    await window.localStorage.setItem("aboutId" , e.target.value)
+    dispatch(Getcategories(window.localStorage.getItem("aboutId")))
+    navigate("/aboutUs")
+  }
   function LanguValue() {
     return window.localStorage.getItem("i18nextLng");
   }
@@ -17,16 +26,6 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
       id: 1,
       title: "Header.0",
       link: "/",
-    },
-    {
-      id: 2,
-      title: "Header.1",
-      link: "/aboutUs",
-    },
-    {
-      id: 3,
-      title: "Header.2",
-      link: "/about",
     },
     {
       id: 4,
@@ -82,7 +81,9 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
             )}
           </select>
           <ul>
-            {data.map((elem) => (
+
+
+            {data.slice(0 , 1).map((elem) => (
               <>
                 <li key={elem.id}>
                   <NavLink onClick={HandleClickClose} to={elem.link}>
@@ -92,7 +93,32 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
                 <hr />
               </>
             ))}
+                      
+                      <li>
+              <button className='links'  value="1" onClick={HandleClickAbout}>
+                {t("Header.1")}
+              </button>
+            </li>
+            <hr />
+
+            <li>
+              <button className='links' value="2" onClick={HandleClickAbout}>
+                {t("Header.2")}
+              </button>
+            </li>
+            <hr />
+            {data.slice(2).map((elem) => (
+              <>
+                <li key={elem.id}>
+                  <NavLink onClick={HandleClickClose} to={elem.link}>
+                    {t(elem.title)}
+                  </NavLink>
+                </li>
+                <hr />
+              </>
+            ))}  
           </ul>
+
         </Wrapper>
       ) : HamburgerClick === false ? (
         <Wrapper style={{ left: "-650px" }}>
