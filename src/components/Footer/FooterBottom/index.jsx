@@ -30,19 +30,19 @@ function FooterBottom() {
         {
             id : 4, 
             title : "Header.3",
-            link : "/team",
+            link : "/projects",
 
         },
         {
             id : 5, 
             title : "Header.4",
-            link : "/Blog",
+            link : "/portfolio",
 
         },
           {
             id : 5, 
             title : "Header.5",
-            link : "/reviews",
+            link : "/addinterior",
         }, 
         {
           id : 6, 
