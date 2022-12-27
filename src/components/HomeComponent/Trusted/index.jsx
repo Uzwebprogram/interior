@@ -24,7 +24,6 @@ const Trusted = () => {
                 <img width={207} height={170} src={elem.partners_img} alt="logo" />
               </Col>
             ))}
-           
           </Row>
         </div>
       </Section>
