@@ -1,42 +1,54 @@
-import React, { useState } from 'react'
-import CommonHero from '../../components/common/CommonHero'
-import {Wrapper} from "./styled-index"
-import Background from "./../../assets/image/About/Background.png"
-import { WrapperContainer } from '../../style-App';
-import { useTranslation } from 'react-i18next';
-import {Row , Col} from "react-grid-system"
+import React, { useState, useEffect } from "react";
+import CommonHero from "../../components/common/CommonHero";
+import { Wrapper } from "./styled-index";
+import Background from "./../../assets/image/About/Background.png";
+import { WrapperContainer } from "../../style-App";
+import { useTranslation } from "react-i18next";
+import { Row, Col } from "react-grid-system";
+import { useDispatch, useSelector } from "react-redux";
+import { GetTeam } from "../../redux/team/index";
 function About() {
-  const [bg , setBg] = useState(Background);
-  const {t , i18n} = useTranslation();
-  const data = [1 , 2 , 3 , 4  , 5 , 6]
+  const [bg, setBg] = useState(Background);
+  const { t, i18n } = useTranslation();
+ const getTeam = useSelector((state) => state.team.getTeam?.Data);
+ const dispatch = useDispatch();
+ useEffect(() => {
+   dispatch(GetTeam());
+ }, []);
+ const LangVal = () => {
+  return window.localStorage.getItem("i18nextLng");
+};
   return (
     <>
       <CommonHero
-      style={{padding : " 100px 0"}}
+        style={{ padding: " 100px 0" }}
         bg={bg}
         isTitle={true}
         title2={t("About.1")}
         isButton={false}
-        isIcon={false}
+        isIcon={true}
       />
       <WrapperContainer>
         <Wrapper>
-        <h2>{t("About.0")}</h2>
-        <Row>
-          {data.map((elem , index) =>
+          <h2>{t("About.0")}</h2>
+          <Row>
+            {getTeam.map((elem) => (
               <Col lg={4} md={12} className="Card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjb-Jsep9tAcYMGcwnDZl9MuXwtJ87LMh-KkFZT04M9XQRs6I0mWi4GJcUD7bTPEOAXRU&usqp=CAU" alt="" />
-                    <h4>Елойр</h4>
-                    <div className="about">
-                    <p>направление работы:</p>
-                    <span>дизайнер</span>
-                    </div>
+                <img
+                  src={elem.team_img}
+                  alt=""
+                />
+                <h4>{elem.team_name}</h4>
+                <div className="about">
+                  <p>направление работы:</p>
+                  <span>{elem.team_position}</span>
+                </div>
               </Col>
-          )}
-        </Row>
+            ))}
+          </Row>
         </Wrapper>
       </WrapperContainer>
     </>
-  )
+  );
 }
-export default About
+export default About;

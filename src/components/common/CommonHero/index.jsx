@@ -15,10 +15,11 @@ const CommonHero = ({
   isButton,
   isIcon,
   style,
+  styleSection
 }) => {
   return (
     <>
-      <Section bg={bg}>
+      <Section style={styleSection} bg={bg}>
         <WrapperContainer>
           <Row component={RowWrap}>
             <Col style={style} component={ColItem} lg={8} md={12} sm={12}>
@@ -31,7 +32,7 @@ const CommonHero = ({
               ) : null}
             </Col>
 
-            {isIcon ? <i class="bx bx-chevron-down"></i> : null}
+            {isIcon ? <i class='bx bxs-chevron-down bx-fade-up' ></i> : null}
           </Row>
         </WrapperContainer>
       </Section>

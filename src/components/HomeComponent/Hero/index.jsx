@@ -38,7 +38,9 @@ const Hero = () => {
         btnText={t("Hero.3")}
         setOpen={handleOpen}
         isTitle={true}
+        styleSection={{padding: "154px 0px",}}
         isButton={true}
+        isIcon={true}
         bg={bg}
       />
       
@@ -69,15 +71,15 @@ const Hero = () => {
               <h4>{t("HeroModal.5")}</h4>
 
               <div className="radioGruop">
-                <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <input type="radio" id="html1" name="fav_language1" value='Дом'/>
                 <label>{t("HeroModal.6")}</label>
               </div>
               <div className="radioGruop">
-                 <input type="radio" id="html" name="fav_language" value="HTML"/>
+                 <input type="radio" id="html1" name="fav_language1" value="Квартира"/>
                 <label>{t("HeroModal.7")}</label>
               </div>
               <div className="radioGruop">
-                <input type="radio" id="html" name="fav_language" value="HTML"/>
+                <input type="radio" id="html1" name="fav_language1" value="Коммерческий объект"/>
                 <label>{t("HeroModal.8")}</label>
               </div>
              
@@ -86,11 +88,11 @@ const Hero = () => {
             <div className="radio-wrapper">
               <h4>{t("HeroModal.9")}</h4>
               <div className="radioGruop">
-              <input type="radio" id="html" name="fav_language" value="HTML"/>
+              <input type="radio" id="html2" name="fav_language2" value="Новостройка"/>
                 <label>{t("HeroModal.10")}</label>
               </div>
               <div className="radioGruop">
-              <input type="radio" id="html" name="fav_language" value="HTML"/>
+              <input type="radio" id="html2" name="fav_language2" value="Вторичное жильё"/>
                 <label>{t("HeroModal.11")}</label>
               </div>
             </div>
@@ -98,23 +100,23 @@ const Hero = () => {
             <div className="radio-wrapper">
               <h4>{t("HeroModal.12")}</h4>
               <div className="radioGruop">
-              <input type="radio" id="html" name="fav_language" value="HTML"/>
+              <input type="radio" id="html3" name="fav_language3" value="до 50 кв.м"/>
                 <label>{t("HeroModal.13")}</label>
               </div>
               <div className="radioGruop">
-              <input type="radio" id="html" name="fav_language" value="HTML"/>
+              <input type="radio" id="html3" name="fav_language3" value="до 100 кв.м"/>
                 <label>{t("HeroModal.14")}</label>
               </div>
               <div className="radioGruop">
-              <input type="radio" id="html" name="fav_language" value="HTML"/>
+              <input type="radio" id="html3" name="fav_language3" value="до 250 кв.м"/>
                 <label>{t("HeroModal.15")}</label>
               </div>
               <div className="radioGruop">
-              <input type="radio" id="html" name="fav_language" value="HTML"/>
+              <input type="radio" id="html3" name="fav_language3" value="до 500 кв.м"/>
                 <label>{t("HeroModal.16")}</label>
               </div>
               <div className="radioGruop">
-              <input type="radio" id="html" name="fav_language" value="HTML"/>
+              <input type="radio" id="html3" name="fav_language3" value="более 500 кв.м"/>
                 <label>{t("HeroModal.17")}</label>
               </div>
             </div>
@@ -127,6 +129,7 @@ const Hero = () => {
                 placeholder={t("HeroModal.18")}
               ></textarea>
             </div>
+            <CommonBtn type={'submit'}>{t("HeroModal.20")}</CommonBtn>
           </Form>
         </ModalBody>
       </ModalCommon>
