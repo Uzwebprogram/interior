@@ -7,15 +7,25 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageHeader from "./header-language";
 import HamburgerMenu from "./hamburger-menu";
+import { useDispatch } from "react-redux";
+import { Getcategories } from "../../redux/about";
+import { useNavigate } from "react-router-dom";
 function Header() {
   const { t, i18n } = useTranslation();
   const [HamburgerClick, setHamburgerClick] = useState(false);
+  const navigate = useNavigate();
   const HandleClick = () => {
     setHamburgerClick(true);
   };
   const HandleClickClose = () => {
     setHamburgerClick(false);
   };
+  const dispatch = useDispatch();
+  const HandleClickAbout = async (e) =>{
+    await window.localStorage.setItem("aboutId" , e.target.value)
+    dispatch(Getcategories(window.localStorage.getItem("aboutId")))
+    navigate("/aboutUs")
+  }
   return (
     <>
       <Wrapper>
@@ -32,17 +42,18 @@ function Header() {
                 </NavLink>
               </li>
               <li>
-                <NavLink className='links' to={"/aboutUs"}>
-                  <p>{t("Header.1")}</p>
-                </NavLink>
+       
+                <button className='links'  value="1" onClick={HandleClickAbout}>
+                  {t("Header.1")}
+                </button>
               </li>
               <li>
-                <NavLink className='links' to={"/aboutUs"}>
-                  <p>{t("Header.2")}</p>
-                </NavLink>
+                <button className='links' value="2" onClick={HandleClickAbout}>
+                  {t("Header.2")}
+                </button>
               </li>
               <li>
-                <NavLink className='links' to={"/projects"}>
+              <NavLink className='links' to={"/projects"}>
                   <p>{t("Header.3")}</p>
                 </NavLink>
               </li>

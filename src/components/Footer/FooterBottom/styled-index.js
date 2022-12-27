@@ -27,6 +27,18 @@ export const Wrapper = styled.div`
                 margin-bottom: 14px;
                 display: flex;
                 align-items: center;
+                button{
+                    font-family: 'Ruda';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                text-decoration: none;
+          background-color: transparent;
+      }
             }
             li a{
                 font-family: 'Ruda';
