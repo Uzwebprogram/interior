@@ -13,8 +13,7 @@ export const Section = styled.div`
   }
   .col-img {
     width: 100%;
-    height: 500px;
-
+    height: 100vh;
     @media only screen and (max-width: 425px) {
       width: 100%;
       height: 350px;

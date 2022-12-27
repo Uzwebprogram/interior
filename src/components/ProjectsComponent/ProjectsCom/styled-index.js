@@ -98,4 +98,16 @@ export const BeforeContainer = styled.div`
       width: 90%;
     }
   }
+  .Before_After_About{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    width: 90%;
+    border: 3px dotted black;
+    img {
+      margin: 0;
+      padding: 0;
+      width: 40%;
+    }
+  }
 `;

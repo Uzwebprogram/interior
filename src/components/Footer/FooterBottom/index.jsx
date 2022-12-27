@@ -1,34 +1,30 @@
 import React from 'react'
 import { Wrapper } from './styled-index'
 import {Col , Row} from "react-grid-system"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import Arrow from "./../../../assets/image/Footer/arrow.png"
 import Location from "./../../../assets/image/Footer/location.svg"
 import Mail from "./../../../assets/image/Footer/mail.svg"
 import Instagram from "./../../../assets/image/Footer/instagram.png"
 import Telegram from "./../../../assets/image/Footer/telegram.png"
 import Youtube from "./../../../assets/image/Footer/youtube.png"
-
+import {Getcategories} from "./../../../redux/about/index.js"
 import { WrapperContainer } from '../../../style-App'
 import { useTranslation } from 'react-i18next'
+import { useDispatch } from 'react-redux'
 function FooterBottom() {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const HandleClickAbout = async (e) =>{
+      await window.localStorage.setItem("aboutId" , e.target.value)
+      dispatch(Getcategories(window.localStorage.getItem("aboutId")))
+      navigate("/aboutUs")
+    }
     const data = [
         {
             id : 1, 
             title : "Header.0",
             link : "/",
-
-        },
-        {
-            id : 2, 
-            title : "Header.1",
-            link : "/aboutUs",
-
-        },
-        {
-            id : 3, 
-            title : "Header.2",
-            link : "/about",
 
         },
         {
@@ -70,6 +66,20 @@ function FooterBottom() {
             <Col className='Col' md={12} lg={3}>
             <h2>{t("Footer.3")}</h2>
             <ul>
+            <li>
+            <img style={{marginRight:"8px"}} src={Arrow} width={20} height={20} alt="" />
+       
+                <button className='links'  value="1" onClick={HandleClickAbout}>
+                    {t("Header.1")}
+                </button>
+                </li>
+                <li>
+                <img style={{marginRight:"8px"}} src={Arrow} width={20} height={20} alt="" />
+
+                <button className='links' value="2" onClick={HandleClickAbout}>
+                    {t("Header.2")}
+                </button>
+                </li>
             {data.map(elem =>(
                         <>
                 <li key={elem.id}>

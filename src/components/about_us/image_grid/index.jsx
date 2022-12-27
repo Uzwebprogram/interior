@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Section, GridContainer } from "./styled-index";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import { itemData } from "./data";
 import { useTranslation } from "react-i18next";
+import { useDispatch, useSelector } from "react-redux";
+import { Getcategories, GetproductsId } from "../../../redux/about";
+import {Getproducts} from "./../../../redux/about"
+import { useNavigate } from "react-router-dom";
 function srcset(image, size, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -12,13 +15,33 @@ function srcset(image, size, rows = 1, cols = 1) {
     }&fit=crop&auto=format&dpr=2 2x`,
   };
 }
+
 const ImageGrid = () => {
     const {t, i18n} = useTranslation()
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    useEffect(() => {
+      dispatch(Getcategories(window.localStorage.getItem("aboutId")))
+    }, [])
+    useEffect(() => {
+      dispatch(Getproducts())
+    }, [])
+    const dataAbout = useSelector(state => state.categories?.getcategories?.Data) 
+    const GetproductsData = useSelector(state => state.categories?.getproducts?.Data)
+    const HandleClickGrid = async (e) => {
+     await  window.localStorage.setItem("MoreId" , e.target.id)
+      navigate("/servies");
+      dispatch(GetproductsId(window.localStorage.getItem("MoreId")))
+    }
   return (
     <>
       <Section>
         <GridContainer>
-          <h2>{t("GridImg.0")}</h2>
+          {dataAbout.map((elem , index) =>
+          <h2 key={index}>  
+            {elem.title_ru}
+          </h2>
+          )}
           <ImageList
             className="grid-img"
             sx={{ width: 500, height: 450 }}
@@ -26,18 +49,22 @@ const ImageGrid = () => {
             cols={4}
             rowHeight={121}
           >
-            {itemData.map((item) => (
+            { GetproductsData.map((item) => (
+              window.localStorage.getItem("aboutId") == item.category_id ?
               <ImageListItem
-                key={item.img}
+                key={item.product_img1}
                 cols={item.cols || 1}
                 rows={item.rows || 2}
               >
                 <img
-                  {...srcset(item.img, 121, item.rows, item.cols)}
-                  alt={item.title}
+                  {...srcset(item.product_img1, 121, item.rows, item.cols)}
+                  alt="images Grid"
                   loading="lazy"
+                  id={item.product_id}
+                  onClick={HandleClickGrid}
                 />
               </ImageListItem>
+              : null
             ))}
           </ImageList>
         </GridContainer>

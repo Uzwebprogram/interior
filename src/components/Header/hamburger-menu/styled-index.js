@@ -2,6 +2,18 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     display: none;
+    button{
+        font-style: normal;
+          font-size: 15px;
+          line-height: 22px;
+          text-align: center;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #ffffff;
+          text-decoration: none;
+          background-color: transparent;
+          border: none;
+      }
  @media only screen and (max-width : 768px) {
     position: fixed;
     display: flex;

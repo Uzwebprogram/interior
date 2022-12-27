@@ -39,6 +39,17 @@ export const Wrapper = styled.div`
         width: 700px;
         padding: 0 10px;
       }
+      button{
+        font-style: normal;
+          font-size: 15px;
+          line-height: 22px;
+          text-align: center;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #ffffff;
+          text-decoration: none;
+          background-color: transparent;
+      }
       li {
         list-style-type: none;
         .links{

@@ -4,7 +4,7 @@ import { Row, Col } from "react-grid-system";
 import TwentyTwenty from "react-twentytwenty";
 import { useDispatch, useSelector } from "react-redux";
 import "./twentytwenty.css";
-
+import Before_After_Icon from "./../../../assets/image/beforeVSafter/icon_before_black.svg"
 import { GetSingle } from "../../../redux/before-after";
 
 import After from "../../../assets/image/after.png";
@@ -77,7 +77,10 @@ const ProjectsCom = () => {
                           <p>{elem.single_description_uz}</p>
                         )}
                       </p>
-                      <img src={icons1} alt="image" />
+                      <div className="Before_After_About">
+                      <img src={Before_After_Icon} width={60} height={60} alt="" />
+                      <p>Подвигайте ползунок, чтобы увидеть разницу</p>
+                      </div>
                     </div>
                   </Col>
                 </Row>
