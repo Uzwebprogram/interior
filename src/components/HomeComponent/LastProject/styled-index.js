@@ -10,7 +10,6 @@ export const Section = styled.div`
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: #ffffff;
-
     @media only screen and (max-width: 425px) {
       font-size: 28px;
     }
@@ -34,7 +33,7 @@ export const Section = styled.div`
 
     .col-content {
       position: relative;
-      height: 500px;
+      height: 305px;
 
       @media only screen and (max-width: 425px) {
         height: auto;
