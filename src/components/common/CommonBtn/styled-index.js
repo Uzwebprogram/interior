@@ -11,4 +11,11 @@ export const Button = styled.button`
   border: none;
   padding: 20px 40px;
   cursor: pointer;
+  @media only screen and (max-width:510px) {
+    width: 90% !important;
+  }
+
+  &:hover {
+    background-color: #fa9b43;
+  }
 `;

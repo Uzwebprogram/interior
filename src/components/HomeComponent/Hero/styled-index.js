@@ -1,104 +1,4 @@
 import styled from "styled-components";
-import heroBg from "../../../assets/image/hero.png";
-
-export const Section = styled.div`
-  background-image: url(${heroBg});
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 86px 0;
-`;
-
-export const RowWrap = styled.div`
-  position: relative;
-  margin: 0 !important;
-  i {
-    color: #fff;
-    font-size: 66px;
-    position: absolute;
-    bottom: -16%;
-    left: 46%;
-
-    @media only screen and (max-width: 375px) {
-      bottom: -25%;
-      left: 40%;
-    }
-  }
-`;
-
-export const ColItem = styled.div`
-  padding: 0;
-  h1 {
-    font-weight: 900;
-    font-size: 17px;
-    line-height: 26px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: #ffffff;
-
-    @media only screen and (max-width: 534px) {
-      font-size: 14px;
-    }
-    @media only screen and (max-width: 375px) {
-      font-size: 12px;
-    }
-  }
-  h2 {
-    font-weight: 900;
-    font-size: 45px;
-    line-height: 68px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: #ffffff;
-
-    @media only screen and (max-width: 664px) {
-      font-size: 35px;
-    }
-    @media only screen and (max-width: 534px) {
-      font-size: 30px;
-      line-height: 48px;
-    }
-
-    @media only screen and (max-width: 470px) {
-      font-size: 25px;
-      line-height: 48px;
-    }
-
-    @media only screen and (max-width: 425px) {
-      font-size: 25px;
-      line-height: 48px;
-    }
-    @media only screen and (max-width: 375px) {
-      font-size: 20px;
-      line-height: 38px;
-    }
-  }
-  p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #ffffff;
-    width: 76%;
-    @media only screen and (max-width: 470px) {
-      width: 100%;
-    }
-    @media only screen and (max-width: 375px) {
-      font-size: 13px;
-    }
-  }
-  button {
-    background: #ff800b;
-    font-weight: 900;
-    font-size: 12px;
-    line-height: 26px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: #ffffff;
-    border: none;
-    padding: 20px 40px;
-  }
-`;
 
 // Modal styled
 
@@ -125,11 +25,94 @@ export const ModalHeader = styled.div`
   }
 `;
 
-export const ModalBody = styled.div``;
+export const ModalBody = styled.div`
+  .radio-label {
+    font-family: "Ruda" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 120% !important;
+    letter-spacing: 0.01em !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .radioGruop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+
+    input[type="radio"] {
+      margin: 0 10px 0 0;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      /* -webkit-appearance: none; */
+      border: 2px solid #fff;
+      border-radius: 50%;
+    }
+    /* .radio-input:checked {
+      background: #fff;
+    } */
+    /* 
+    #accent {
+      accent-color: red;
+    }
+
+    input[type="radio"]:before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 3px 3px 3px 3px;
+      border-radius: 50%;
+    }
+    input[type="radio"]:checked:before {
+      background: #fff;
+    } */
+  }
+`;
 
 export const Form = styled.form`
   width: 100%;
   margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .radio-wrapper {
+    margin: 35px 0;
+
+    textarea {
+      width: 100%;
+      border: none;
+      background: #000000;
+      border-bottom: 1px solid #cccccc;
+      outline: none;
+      font-family: "Ruda";
+      color: #fff;
+    }
+  }
+
+  label {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+  input {
+    background: #000000;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cccccc;
+    width: 96%;
+    padding: 10px 10px;
+    color: #fff;
+  }
+  .labelInput {
+  margin: 15px 0px !important;
+  }
 `;
 
 export const InputControls = styled.div`
