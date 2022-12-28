@@ -118,7 +118,7 @@ const Example = () => {
                   />
                   <div className="col-content">
                     <h4>{t("Example.15")}</h4>
-                    <p>{t("Example.16")}</p>
+                    <p>{elem.design}</p>
                   </div>
                 </div>
               </Col>
