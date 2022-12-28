@@ -51,6 +51,7 @@ export const ColItem = styled.div`
     font-weight: 900;
     font-size: 45px;
     line-height: 68px;
+    margin: 0;
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: #ffffff;

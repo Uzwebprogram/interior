@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -6,6 +7,7 @@ import { Wrapper } from "./styled-index";
 
 function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
   const { t, i18n } = useTranslation();
+  const [drop, setDrop] = useState(false);
   const handleLang = (e) => {
     const lang = e.target.value;
     i18n.changeLanguage(lang);
@@ -13,11 +15,11 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
   };
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const HandleClickAbout = async (e) =>{
-    await window.localStorage.setItem("aboutId" , e.target.value)
-    dispatch(Getcategories(window.localStorage.getItem("aboutId")))
-    navigate("/aboutUs")
-  }
+  const HandleClickAbout = async (e) => {
+    await window.localStorage.setItem("aboutId", e.target.value);
+    dispatch(Getcategories(window.localStorage.getItem("aboutId")));
+    navigate("/aboutUs");
+  };
   function LanguValue() {
     return window.localStorage.getItem("i18nextLng");
   }
@@ -35,17 +37,12 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
     {
       id: 5,
       title: "Header.4",
-      link: "/Blog",
+      link: "/portfolio",
     },
     {
       id: 5,
       title: "Header.5",
-      link: "/reviews",
-    },
-    {
-      id: 6,
-      title: "Header.6",
-      link: "/contact",
+      link: "/addinterior",
     },
   ];
   return (
@@ -81,28 +78,28 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
             )}
           </select>
           <ul>
-
-
-            {data.slice(0 , 1).map((elem) => (
+            {data.slice(0, 1).map((elem) => (
               <>
                 <li key={elem.id}>
-                  <NavLink onClick={HandleClickClose} to={elem.link}>
-                    {t(elem.title)}
-                  </NavLink>
+                  <button>
+                    <NavLink onClick={HandleClickClose} to={elem.link}>
+                      {t(elem.title)}
+                    </NavLink>
+                  </button>
                 </li>
                 <hr />
               </>
             ))}
-                      
-                      <li>
-              <button className='links'  value="1" onClick={HandleClickAbout}>
+
+            <li>
+              <button className="links" value="1" onClick={HandleClickAbout}>
                 {t("Header.1")}
               </button>
             </li>
             <hr />
 
             <li>
-              <button className='links' value="2" onClick={HandleClickAbout}>
+              <button className="links" value="2" onClick={HandleClickAbout}>
                 {t("Header.2")}
               </button>
             </li>
@@ -110,15 +107,54 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
             {data.slice(2).map((elem) => (
               <>
                 <li key={elem.id}>
-                  <NavLink onClick={HandleClickClose} to={elem.link}>
-                    {t(elem.title)}
-                  </NavLink>
+                  <button>
+                    <NavLink onClick={HandleClickClose} to={elem.link}>
+                      {t(elem.title)}
+                    </NavLink>
+                  </button>
                 </li>
                 <hr />
               </>
-            ))}  
+            ))}
+            <li>
+              {drop ? (
+                <>
+                  <button className="conBtn" onClick={() => setDrop(false)}>
+                    {t("Header.6")}
+                  </button>
+                  <hr />
+                </>
+              ) : (
+                <>
+                  <button className="conBtn" onClick={() => setDrop(true)}>{t("Header.6")}</button>
+                  <hr />
+                </>
+              )}
+              {drop ? (
+                <>
+                  <div className="dropdown">
+                    <button>
+                      <NavLink className="link" to={"/about"}>
+                        <p>{t("Header.7")}</p>
+                      </NavLink>
+                    </button>
+                    <br />
+                    <button>
+                      <NavLink className="link" to={"/vacancy"}>
+                        <p>{t("Header.8")}</p>
+                      </NavLink>
+                    </button>
+                    <br />
+                    <button>
+                      <NavLink className="link" to={"/contact"}>
+                        <p>{t("Header.6")}</p>
+                      </NavLink>
+                    </button>
+                  </div>
+                </>
+              ) : null}
+            </li>
           </ul>
-
         </Wrapper>
       ) : HamburgerClick === false ? (
         <Wrapper style={{ left: "-650px" }}>

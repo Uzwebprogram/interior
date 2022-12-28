@@ -26,7 +26,6 @@ const CommonHero = ({
               {isTitle ? <h1>{title1}</h1> : null}
               {isTitle ? <h2>{title2}</h2> : null}
               {isTitle ? <p>{text}</p> : null}
-
               {isButton ? (
                 <CommonBtn onClick={setOpen}>{btnText}</CommonBtn>
               ) : null}
