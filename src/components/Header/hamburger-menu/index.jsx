@@ -19,6 +19,7 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
     await window.localStorage.setItem("aboutId", e.target.value);
     dispatch(Getcategories(window.localStorage.getItem("aboutId")));
     navigate("/aboutUs");
+    HandleClickClose()
   };
   function LanguValue() {
     return window.localStorage.getItem("i18nextLng");

@@ -33,13 +33,17 @@ const ImageGrid = () => {
       navigate("/servies");
       dispatch(GetproductsId(window.localStorage.getItem("MoreId")))
     }
+    function GetLanguage() {
+        return window.localStorage.getItem("i18nextLng")
+    }
   return (
     <>
       <Section>
         <GridContainer>
           {dataAbout.map((elem , index) =>
           <h2 key={index}>  
-            {elem.title_ru}
+                 {GetLanguage() == "ru" ? elem.title_ru : GetLanguage() == "uz" ? elem.title_uz : GetLanguage() == "en" ? elem.title_en : null }
+            
           </h2>
           )}
           <ImageList
@@ -71,7 +75,8 @@ const ImageGrid = () => {
         <GridContainerMobile>
           {dataAbout.map((elem , index) =>
           <h2 key={index}>  
-            {elem.title_ru}
+          {GetLanguage() == "ru" ? elem.title_ru : GetLanguage() == "uz" ? elem.title_uz : GetLanguage() == "en" ? elem.title_en : null }
+            
           </h2>
           )}
           <ImageList
@@ -79,7 +84,7 @@ const ImageGrid = () => {
             sx={{ width: 500, height: 450 }}
             variant="quilted"
             cols={4}
-            rowHeight={121}
+            rowHeight={24}
           >
             { GetproductsData.map((item) => (
               window.localStorage.getItem("aboutId") == item.category_id ?

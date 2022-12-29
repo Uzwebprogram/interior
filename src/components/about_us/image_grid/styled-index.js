@@ -37,6 +37,7 @@ export const GridContainer = styled.div`
 export const GridContainerMobile = styled.div`
   display: none;
   @media only screen and (max-width:900px) {
+    display: block;
     max-width: 98%;
   width: 100%;
   margin: 0 auto;
@@ -52,7 +53,7 @@ export const GridContainerMobile = styled.div`
     @media only screen and (max-width: 425px) {
       font-size: 28px;
     }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 399px) {
       font-size: 26px;
     }
     @media only screen and (max-width: 320px) {
