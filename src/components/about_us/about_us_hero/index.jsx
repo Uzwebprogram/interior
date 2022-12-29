@@ -23,6 +23,7 @@ const AboutUsHero = () => {
         bg={bg}
         title2={t("AboutUs.0")}
         btnText={t("Hero.3")}
+        text={t("AboutUs.1")}
         isTitle={true}
         isButton={true}
         setOpen={handleOpen}
