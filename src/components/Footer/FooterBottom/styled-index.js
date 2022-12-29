@@ -38,6 +38,7 @@ export const Wrapper = styled.div`
           color: #ffffff;
           text-decoration: none;
           background-color: transparent;
+          border: none;
         }
       }
       li a {
