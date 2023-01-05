@@ -21,7 +21,7 @@ export const Section = styled.div`
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
-      line-height: 18px;
+      line-height: 30px;
       letter-spacing: 0.07em;
       text-transform: uppercase;
       color: #ffffff;
