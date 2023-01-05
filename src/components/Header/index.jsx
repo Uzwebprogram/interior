@@ -22,7 +22,7 @@ function Header() {
   };
   const dispatch = useDispatch();
   const HandleClickAbout = async (e) =>{
-    await window.localStorage.setItem("aboutId" , e.target.value)
+    await window.localStorage.setItem("aboutId" , e.target.id)
     dispatch(Getcategories(window.localStorage.getItem("aboutId")))
     navigate("/aboutUs")
   }
@@ -43,14 +43,14 @@ function Header() {
               </li>
               <li>
        
-                <button className='links'  value="1" onClick={HandleClickAbout}>
+                <p className='links'  id="1" onClick={HandleClickAbout}>
                   {t("Header.1")}
-                </button>
+                </p>
               </li>
               <li>
-                <button className='links' value="2" onClick={HandleClickAbout}>
+                <p className='links' id="2" onClick={HandleClickAbout}>
                   {t("Header.2")}
-                </button>
+                </p>
               </li>
               <li>
               <NavLink className='links' to={"/projects"}>
@@ -69,7 +69,7 @@ function Header() {
               </li>
               <li>
                 <div class="dropdown">
-                  <button class="dropbtn">{t("Header.6")}</button>
+                  <p class="dropbtn">{t("Header.6")}</p>
                   <div class="dropdown-content">
                     <NavLink className='link' to={"/about"}>
                       <p>{t("Header.7")}</p>

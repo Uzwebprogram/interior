@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import heroBg from "../../../assets/image/hero.png";
 
 export const Section = styled.div`
-  background-image: url(${props => (props.bg)});
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),  url(${props => (props.bg)}) ;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+
 `;
 
 export const RowWrap = styled.div`

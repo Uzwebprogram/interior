@@ -60,6 +60,7 @@ export const Section = styled.div`
       background: #fff;
       border: 1px solid #fff;
       width: 350px;
+      height: 525px;
       @media only screen and (max-width: 768px) {
         height: 100px;
         width: 100%;

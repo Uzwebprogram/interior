@@ -20,8 +20,8 @@ const Trusted = () => {
           <h2>{t("Trusted.0")}</h2>
           <Row className="row">
             {getTrusted.map((elem, index) => (
-              <Col key={index} className="col" lg={2} md={4} sm={12} sx={6}>
-                <img width={207} height={170} src={elem.partners_img} alt="logo" />
+              <Col key={index} className="col" lg={3} md={4} sm={12} sx={6}>
+                <img width={300} height={300} src={elem.partners_img} alt="logo" />
               </Col>
             ))}
           </Row>

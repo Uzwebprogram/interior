@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CommonHero from "../../common/CommonHero/index";
-import hero from "../../../assets/image/hero.png";
+import hero from "../../../assets/image/servies/about.jpg";
 import { useTranslation } from "react-i18next";
 import ModalCommon from "../../common/Modal/Modal";
 import CommonInput from "../../common/CommonInput";

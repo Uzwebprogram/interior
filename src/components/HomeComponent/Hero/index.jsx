@@ -21,7 +21,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import CommonHero from "../../common/CommonHero";
-import heroBg from "../../../assets/image/hero.png";
+import heroBg from "../../../assets/home/home-hero.jpg";
 import { useDispatch } from "react-redux";
 import { PostCalculate } from "../../../redux/calculate";
 
@@ -65,11 +65,11 @@ const Hero = () => {
       <CommonHero
         title1={t("Hero.0")}
         title2={t("Hero.1")}
-        text={t("Hero.2")}
+        text={t("AboutUs.1")}
         btnText={t("Hero.3")}
         setOpen={handleOpen}
         isTitle={true}
-        styleSection={{ padding: "154px 0px" }}
+        styleSection={{ padding: "192px 0px" }}
         isButton={true}
         isIcon={true}
         bg={bg}

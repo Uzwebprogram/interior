@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Section, GridContainer } from "./styled-index";
+import { Section, GridContainer , GridContainerMobile } from "./styled-index";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { useTranslation } from "react-i18next";
@@ -33,13 +33,17 @@ const ImageGrid = () => {
       navigate("/servies");
       dispatch(GetproductsId(window.localStorage.getItem("MoreId")))
     }
+    function GetLanguage() {
+        return window.localStorage.getItem("i18nextLng")
+    }
   return (
     <>
       <Section>
         <GridContainer>
           {dataAbout.map((elem , index) =>
           <h2 key={index}>  
-            {elem.title_ru}
+                 {GetLanguage() == "ru" ? elem.title_ru : GetLanguage() == "uz" ? elem.title_uz : GetLanguage() == "en" ? elem.title_en : null }
+            
           </h2>
           )}
           <ImageList
@@ -68,6 +72,39 @@ const ImageGrid = () => {
             ))}
           </ImageList>
         </GridContainer>
+        <GridContainerMobile>
+          {dataAbout.map((elem , index) =>
+          <h2 key={index}>  
+          {GetLanguage() == "ru" ? elem.title_ru : GetLanguage() == "uz" ? elem.title_uz : GetLanguage() == "en" ? elem.title_en : null }
+            
+          </h2>
+          )}
+          <ImageList
+            className="grid-img"
+            sx={{ width: 500, height: 450 }}
+            variant="quilted"
+            cols={4}
+            rowHeight={24}
+          >
+            { GetproductsData.map((item) => (
+              window.localStorage.getItem("aboutId") == item.category_id ?
+              <ImageListItem
+                key={item.product_img1}
+                cols={6 || 1}
+                rows={12 || 2}
+              >
+                <img
+                  {...srcset(item.product_img1, 121)}
+                  alt="images Grid"
+                  loading="lazy"
+                  id={item.product_id}
+                  onClick={HandleClickGrid}
+                />
+              </ImageListItem>
+              : null
+            ))}
+          </ImageList>
+        </GridContainerMobile>
       </Section>
     </>
   );

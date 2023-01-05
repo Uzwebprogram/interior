@@ -38,6 +38,7 @@ export const Wrapper = styled.div`
           color: #ffffff;
           text-decoration: none;
           background-color: transparent;
+          border: none;
         }
       }
       li a {
@@ -101,18 +102,23 @@ export const Wrapper = styled.div`
     }
     .buttonSub {
       font-family: "Ruda";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 18px;
-      text-align: center;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #1b1717;
-      width: 70%;
-      padding-top: 19px;
-      padding-bottom: 17px;
-      margin-top: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    -webkit-letter-spacing: 0.1em;
+    -moz-letter-spacing: 0.1em;
+    -ms-letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1b1717;
+    background-color: white;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    position: relative;
+    top: 34px;
+    padding: 20px 80px;
     }
     h4 {
       margin-top: 3%;
