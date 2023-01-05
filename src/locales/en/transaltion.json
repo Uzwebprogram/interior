@@ -5,8 +5,10 @@
     "2": "residential",
     "3": "before and after",
     "4": "blog",
-    "5": "Sale",
-    "6": "contacts"
+    "5": "Sail",
+    "6": "contacts",
+    "7": "about us",
+    "8": "vacancies"
   },
 
   "Example": {
@@ -30,7 +32,7 @@
   },
 
   "AboutUs": {
-    "0": "DESIGN PROJECTS OF RESIDENTIAL PREMISES!",
+    "0": "We always think about the people for whom we design space.",
     "1": "Do you want to discuss the project and calculate the cost?"
   },
   "GridImg": {
@@ -51,7 +53,8 @@
     "4": "Contact us",
     "5": "Uzbekistan, Tashkent, Navoi st. 9.",
     "6": "Email address",
-    "7": "Subscribe"
+    "7": "Subscribe",
+    "8": "Let's stay in touch"
   },
   "Contact": {
     "0": "Contacts"
@@ -122,5 +125,8 @@
   },
   "Trusted": {
     "0": "trust us"
+  },
+  "before_after" : {
+    "0" : "Move the slider to see the difference"
   }
 }

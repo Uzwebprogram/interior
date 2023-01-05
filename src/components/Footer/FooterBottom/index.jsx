@@ -68,8 +68,8 @@ function FooterBottom() {
                 <img src={Telegram} width={30} height={30} alt="" />
               </a>
             </div>
-            <h4>Давайте оставаться на связи</h4>
-            <button className="buttonSub">{t("Footer.7")}</button>
+            <h4>{t("Footer.8")}</h4>
+            <a href="https://www.instagram.com/luxhouse_studio/" target="_blank" className="buttonSub">{t("Footer.7")}</a>
           </Col>
           <Col className="Col" md={12} lg={3}>
             <h2>{t("Footer.3")}</h2>
@@ -154,7 +154,7 @@ function FooterBottom() {
                 height={20}
                 alt=""
               />
-              <a href="mailto:luxhouse@gmail.com">luxhouse@gmail.com</a>
+              <a href="mailto:luxhouse@gmail.com" >luxhouse@gmail.com</a>
             </div>
             <div className="Footer-Address-Button">
               <p>{t("Footer.6")}</p>

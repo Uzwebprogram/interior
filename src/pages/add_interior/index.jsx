@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import CommonHero from "../../components/common/CommonHero";
-import BackgroundImage from "./../../assets/image/hero.png";
+import BackgroundImage from "./../../assets/image/About/seal.jpg";
 import { WrapperContainer } from "../../style-App";
 import AddInteriorComponent from "../../components/add_interior";
 function AddInterior() {
