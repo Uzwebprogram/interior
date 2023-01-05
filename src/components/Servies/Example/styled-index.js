@@ -29,7 +29,7 @@ export const Section = styled.div`
   }
   .col-content-wrapper {
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: flex-start;
     margin: 35px 0;
     img {
