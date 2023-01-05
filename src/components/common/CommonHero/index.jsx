@@ -15,17 +15,17 @@ const CommonHero = ({
   isButton,
   isIcon,
   style,
+  styleSection
 }) => {
   return (
     <>
-      <Section bg={bg}>
+      <Section style={styleSection} bg={bg}>
         <WrapperContainer>
           <Row component={RowWrap}>
             <Col style={style} component={ColItem} lg={8} md={12} sm={12}>
               {isTitle ? <h1>{title1}</h1> : null}
               {isTitle ? <h2>{title2}</h2> : null}
               {isTitle ? <p>{text}</p> : null}
-
               {isButton ? (
                 <CommonBtn onClick={setOpen}>{btnText}</CommonBtn>
               ) : null}

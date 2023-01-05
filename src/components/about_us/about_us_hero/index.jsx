@@ -23,10 +23,12 @@ const AboutUsHero = () => {
         bg={bg}
         title2={t("AboutUs.0")}
         btnText={t("Hero.3")}
+        text={t("AboutUs.1")}
         isTitle={true}
         isButton={true}
         setOpen={handleOpen}
         isIcon={true}
+        styleSection={{padding: "150px 0px 0px 0px"}}
         style={{ padding: "16px 0", height: '80vh' }}
       />
       <ModalCommon

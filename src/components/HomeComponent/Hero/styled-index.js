@@ -54,7 +54,7 @@ export const ModalBody = styled.div`
     /* .radio-input:checked {
       background: #fff;
     } */
-/* 
+    /* 
     #accent {
       accent-color: red;
     }
@@ -76,6 +76,9 @@ export const ModalBody = styled.div`
 export const Form = styled.form`
   width: 100%;
   margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 
   .radio-wrapper {
     margin: 35px 0;
@@ -89,6 +92,26 @@ export const Form = styled.form`
       font-family: "Ruda";
       color: #fff;
     }
+  }
+
+  label {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+  input {
+    background: #000000;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cccccc;
+    width: 96%;
+    padding: 10px 10px;
+    color: #fff;
+  }
+  .labelInput {
+  margin: 15px 0px !important;
   }
 `;
 
