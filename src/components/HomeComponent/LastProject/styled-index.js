@@ -38,7 +38,12 @@ export const Section = styled.div`
       @media only screen and (max-width: 425px) {
         height: auto;
       }
-      
+    }
+    .blur-box {
+      position: absolute;
+      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3));
+      width: 100%;
+      height: 100%;
     }
     .col-text {
       position: absolute;

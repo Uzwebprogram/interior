@@ -25,6 +25,7 @@ const LastProject = () => {
             {getProject.map((elem, index) => (
               <Col className="col" lg={4} md={6} sx={12} sm={12} key={index}>
                 <div className="col-content">
+                  <div className="blur-box"></div>
                   <div className="col-text">
                     <h2>{elem.project_title_uz}</h2>
                     <p>{elem.project_description_ru}</p>
