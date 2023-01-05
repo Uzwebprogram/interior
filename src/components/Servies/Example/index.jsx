@@ -92,6 +92,7 @@ const Example = () => {
                     alt=""
                   />
                   <div className="col-content">
+                    <h4>{t("Example.17")}:</h4>
                     <p>{DateFormat(elem.date)}</p>
                   </div>
                 </div>
