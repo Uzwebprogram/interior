@@ -33,7 +33,7 @@ export const Section = styled.div`
 
     .col-content {
       position: relative;
-      height: 305px;
+      height: 350px;
 
       @media only screen and (max-width: 425px) {
         height: auto;
