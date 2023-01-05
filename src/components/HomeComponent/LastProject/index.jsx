@@ -16,6 +16,9 @@ const LastProject = () => {
   useEffect(() => {
     dipatch(GetProject());
   }, []);
+  function GetValueLang(){
+    return window.localStorage.getItem("i18nextLng")
+  }
   return (
     <>
       <Section>
@@ -27,8 +30,9 @@ const LastProject = () => {
                 <div className="col-content">
                   <div className="blur-box"></div>
                   <div className="col-text">
-                    <h2>{elem.project_title_uz}</h2>
-                    <p>{elem.project_description_ru}</p>
+                    
+                    <h2>{GetValueLang() == "uz" ? elem.project_title_uz : GetValueLang() == "ru" ? elem.project_title_ru : GetValueLang() == "en" ? elem.project_title_en :null}</h2>
+                    <p>{GetValueLang() == "uz" ? elem.project_description_uz : GetValueLang() == "en" ? elem.project_description_en :GetValueLang() == "ru" ? elem.project_description_ru : null}</p>
                   </div>
                   <img src={elem.project_img} alt="image" />
                 </div>

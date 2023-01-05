@@ -10,4 +10,7 @@ export const Wrapper = styled.div`
     color: white;
     text-align: center;
     padding-top: 150px;
+    @media only screen and (max-width : 560px) {
+            padding-top: 75px;
+    }
 `

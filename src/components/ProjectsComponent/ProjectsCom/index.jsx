@@ -10,6 +10,7 @@ import { GetSingle } from "../../../redux/before-after";
 import After from "../../../assets/image/after.png";
 import Before from "../../../assets/image/hero.png";
 import icons1 from "../../../assets/image/beforeVSafter/icons1.png";
+import { useTranslation } from "react-i18next";
 const arr = [1, 2, 3, 4];
 const ProjectsCom = () => {
   const getSingle = useSelector((state) => state.single.getSingle?.Data);
@@ -20,6 +21,7 @@ const ProjectsCom = () => {
   const LangVal = () => {
     return window.localStorage.getItem("i18nextLng");
   };
+  const {t , i18n} = useTranslation();
   return (
     <>
       <Section>
@@ -79,7 +81,7 @@ const ProjectsCom = () => {
                       </p>
                       <div className="Before_After_About">
                       <img src={Before_After_Icon} width={60} height={60} alt="" />
-                      <p>Подвигайте ползунок, чтобы увидеть разницу</p>
+                      <p>{t("before_after.0")}</p>
                       </div>
                     </div>
                   </Col>

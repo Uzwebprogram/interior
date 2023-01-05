@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import CommonHero from "../../components/common/CommonHero";
-import BackgroundImage from "./../../assets/image/hero.png";
+import BackgroundImage from "./../../assets/image/About/seal.jpg";
 import { WrapperContainer } from "../../style-App";
 import AddInteriorComponent from "../../components/add_interior";
 function AddInterior() {
@@ -11,7 +11,7 @@ function AddInterior() {
     <>
       <CommonHero
         bg={bg}
-        style={{ padding: "150px 0 263px 0" }}
+        style={{ padding: "150px 0 310px 0" }}
         isTitle={true}
         title2={t("AddInterior.1")}
         text={t("AddInterior.0")}

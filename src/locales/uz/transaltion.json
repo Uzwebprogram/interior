@@ -2,11 +2,14 @@
   "Header": {
     "0": "asosiy",
     "1": "tijorat",
-    "2": "turar joy",
+    "2": "turar-joy",
     "3": "oldin va keyin",
     "4": "blog",
-    "5": "Sotish",
-    "6": "kontaktlar"
+    "5": "Yelkan",
+    "6": "kontaktlar",
+    "7": "biz haqimizda",
+    "8": "bo'sh ish o'rinlari"
+
   },
 
   "Example": {
@@ -30,7 +33,7 @@
   },
 
   "AboutUs": {
-    "0": "TURAR-JOY BINOLARINING DIZAYN LOYIHALARI!",
+    "0": "Biz har doim makonni loyihalashtirgan odamlar haqida o'ylaymiz.",
     "1": "Loyihani muhokama qilishni va xarajatlarni hisoblashni xohlaysizmi?"
   },
   "GridImg": {
@@ -44,14 +47,15 @@
     "4": "Telefon raqamingiz"
   },
   "Footer": {
-    "0": "QULAY VA O'YLANGAN INTERYERGA ATIGI 1 QADAM",
+    "0": "Maslahatga buyurtma bering",
     "1": "Buyurtma",
     "2": "Biz ichki dizayn xizmatlarining to'liq spektrini taqdim etamiz",
     "3": "Navigatsiya",
     "4": "Biz bilan bog'laning",
     "5": "O'zbekiston, Toshkent, Navoiy ko'chasi 9.",
     "6": "Elektron pochta manzili",
-    "7": "Obuna bo'lish"
+    "7": "Obuna bo'lish",
+    "8": "Aloqada bo'laylik"
   },
   "Contact": {
     "0": "Kontaktlar"
@@ -122,5 +126,8 @@
   },
   "Trusted": {
     "0": "bizga ishon"
+  },
+  "before_after" : {
+    "0" : "Farqni ko'rish uchun slayderni harakatlantiring"
   }
 }

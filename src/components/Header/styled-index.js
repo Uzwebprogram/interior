@@ -39,8 +39,9 @@ export const Wrapper = styled.div`
         width: 700px;
         padding: 0 10px;
       }
-      button{
+      p{
         font-style: normal;
+          font-weight: 300;
           font-size: 15px;
           line-height: 22px;
           text-align: center;
@@ -48,7 +49,9 @@ export const Wrapper = styled.div`
           text-transform: uppercase;
           color: #ffffff;
           text-decoration: none;
-          background-color: transparent;
+          margin: 0 ;
+          padding: 0;
+          cursor: pointer;
       }
       li {
         list-style-type: none;

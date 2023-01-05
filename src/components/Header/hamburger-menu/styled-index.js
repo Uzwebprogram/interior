@@ -26,6 +26,7 @@ export const Wrapper = styled.div`
     transition: 2s;
     z-index: 1000;
     top: 0;
+    overflow-y: scroll;
     select {
       background-color: transparent;
       color: white;
