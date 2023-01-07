@@ -63,13 +63,12 @@ const Hero = () => {
   return (
     <>
       <CommonHero
-        title1={t("Hero.0")}
         title2={t("Hero.1")}
         text={t("AboutUs.1")}
         btnText={t("Hero.3")}
         setOpen={handleOpen}
         isTitle={true}
-        styleSection={{ padding: "192px 0px" }}
+        styleSection={{ padding: "212px 0px" }}
         isButton={true}
         isIcon={true}
         bg={bg}

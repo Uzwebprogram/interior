@@ -41,14 +41,14 @@
     "0": "tijorat interyerlari"
   },
   "ContactModal": {
-    "0": "Maslahatga buyurtma berish",
+    "0": "loyihangiz haqida gapiraylikmi?",
     "1": "Menejer tez orada siz bilan bog'lanadi",
     "2": "ismingiz",
     "3": "ism-familiya",
     "4": "Telefon raqamingiz"
   },
   "Footer": {
-    "0": "Maslahatga buyurtma bering",
+    "0": "loyihangiz haqida gapiraylikmi?",
     "1": "Buyurtma",
     "2": "Biz ichki dizayn xizmatlarining to'liq spektrini taqdim etamiz",
     "3": "Navigatsiya",
@@ -82,7 +82,7 @@
   },
   "Hero": {
     "0": "LUXHOUSEGA Xush kelibsiz",
-    "1": "ORZULARINGIZDAGI UYINGIZNING ELGANT INTERERIYERINI YARATING",
+    "1": "Biz turar-joy va tijorat interyerlarini loyihalashtiramiz va amalga oshiramiz",
     "2": "Toshkentdagi kvartirangizning interyer dizaynini ishlab chiqamiz va orzuingizdek ta’mirlaymiz",
     "3": "Loyihani hisoblash"
   },

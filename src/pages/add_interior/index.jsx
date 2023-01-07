@@ -11,7 +11,7 @@ function AddInterior() {
     <>
       <CommonHero
         bg={bg}
-        style={{ padding: "220px 0 200px 0" }}
+        style={{ padding: "260px 0 200px 0" }}
         isTitle={true}
         title2={t("AddInterior.1")}
         text={t("AddInterior.0")}

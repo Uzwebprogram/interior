@@ -6,7 +6,6 @@ export const InterContainer = styled.div`
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-
   .row {
     margin: 0 !important;
   }
@@ -14,8 +13,10 @@ export const InterContainer = styled.div`
   .col {
     padding: 0 11px !important;
     margin: 5px 0 0 0;
+    height: 345px;
     div {
       width: 100%;
+      height: 100%;
       position: relative;
       h2 {
         font-style: normal;
@@ -57,6 +58,7 @@ export const InterContainer = styled.div`
       }
       img {
         width: 100%;
+      height: 100%;
         mix-blend-mode: lighten;
         opacity: 0.53;
       }

@@ -22,7 +22,6 @@ const LastProject = () => {
   return (
     <>
       <Section>
-        <WrapperContainer>
           <h2>{t("LastProject.0")}</h2>
           <Row className="row">
             {getProject.map((elem, index) => (
@@ -39,8 +38,7 @@ const LastProject = () => {
               </Col>
             ))}
           </Row>
-        </WrapperContainer>
-      </Section>
+        </Section>
     </>
   );
 };

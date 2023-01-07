@@ -40,14 +40,14 @@
     "0": "commercial interiors"
   },
   "ContactModal": {
-    "0": "Order a consultation",
+    "0": "let's talk about your project?",
     "1": "The manager will contact you shortly",
     "2": "your name",
     "3": "first name-surname",
     "4": "Your phone number"
   },
   "Footer": {
-    "0": "Order a consultation",
+    "0": "let's talk about your project?",
     "1": "Order",
     "2": "We provide a full range of interior design services",
     "3": "Navigation",
@@ -81,7 +81,7 @@
   },
   "Hero": {
     "0": "WELCOME TO LUXHOUSE",
-    "1": "CREATE THE ELEGANT INTERIOR OF YOUR DREAM HOME",
+    "1": "I design and realize residential and commercial interiors",
     "2": "We will develop an interior design and make a dream renovation in your apartment in Tashkent.",
     "3": "Calculate project"
   },

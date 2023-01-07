@@ -24,7 +24,7 @@ const Interier = () => {
             <Col id="1" onClick={HandleClick} md={12} lg={12} className='col'>
               <div id="1" onClick={HandleClick}>
                 <h2 id="1" onClick={HandleClick}>{t("Interier.0")}</h2>
-                <img id="1" onClick={HandleClick} src={interierImg} alt="image" />
+                <img  id="1" onClick={HandleClick} src={interierImg} alt="image" />
               </div>
             </Col>
             <Col id="2" onClick={HandleClick} md={12} lg={12} className='col'>

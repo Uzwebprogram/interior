@@ -5,7 +5,6 @@ export const Section = styled.div`
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-
 `;
 
 export const RowWrap = styled.div`
