@@ -9,7 +9,6 @@
     "6": "kontaktlar",
     "7": "biz haqimizda",
     "8": "bo'sh ish o'rinlari"
-
   },
 
   "Example": {
@@ -30,7 +29,7 @@
     "14": "Zamonaviy",
     "15": "Dizayn va 3D vizualizatsiya:",
     "16": "PROSVIRIN DIZAYN",
-    "17":  "Yil"
+    "17": "Yil"
   },
 
   "AboutUs": {
@@ -74,11 +73,42 @@
   },
   "AddInterior": {
     "0": "Biz dunyoning istalgan nuqtasida individual premium interyer loyihasini yaratamiz",
-    "1": "BIZ ELITA INTERIORLARNI YARATAMIZ"
+    "1": "BIZ ELITA INTERIORLARNI YARATAMIZ",
+    "2": "Muallif nazorati",
+    "3": "To'liq to'plam",
+    "4": "Maslahat"
   },
   "add_interior": {
     "0": "INTERIOR DIZAYN XIZMATLARI",
-    "1": "Ta'mirlashni qo'llab-quvvatlash xizmatlari:"
+    "1": "Ta'mirlashni qo'llab-quvvatlash xizmatlari:",
+    "2": "MINI PAKET",
+    "3": "O'lchovlar",
+    "4": "Ta'mirlashni boshlash uchun 7 ta batafsil chizmalar: (O'lchov rejasi, qismlarni demontaj qilish va o'rnatish rejasi, mebelni tartibga solish, rozetkalar, kalitlar va yoritish rejasi)",
+    "5": "Hayotingiz uchun 100% individual loyiha.",
+    "6": "Biz qayta rejalashtirishni muvofiqlashtirish normalarini hisobga olamiz",
+    "7": "HAR M2 uchun $6",
+    "8": "EXPRESS PAKET",
+    "9": "O'lchovlar",
+    "10": "Qurilish va xarid qilish uchun barcha kerakli chizmalar: (Mebelni demontaj qilish, o'rnatish, tartibga solish, sanitariya-tesisat, isitish, rozetkalar, kalitlar, yoritish, ship va taxta)",
+    "11": "Har bir xona uchun mebel va dekorning vizual tanlovi (rasmlarda moodboard).",
+    "12": "HAR M2 uchun $12",
+    "13": "SETCH PACK",
+    "14": "Dizayner maslahati bilan texnik topshiriq",
+    "15": "O'lchovlar",
+    "16": "Mebel va jihozlar bilan rejalashtirish yechimi",
+    "17": "Loyihaning haqiqiy eskizlari",
+    "18": "To'liq ishchi dizayn: mebel va jihozlar bilan rejalashtirish yechimi, qurilish va xaridlar uchun barcha kerakli chizmalar.",
+    "19": "Subpudratchilarning muhandislik loyihalarini moslashtirish",
+    "20": "HAR M2 uchun $20",
+    "21": "TO'LIQ PAKET",
+    "22": "Dizayner maslahati bilan texnik topshiriq",
+    "23": "O'lchovlar",
+    "24": "Mebel va jihozlar bilan rejalashtirish yechimi",
+    "25": "To'liq batafsil dizayn: Qurilish va xaridlar uchun barcha kerakli chizmalar.",
+    "26": "Subpudratchilarning muhandislik loyihalarini moslashtirish",
+    "27": "Fotorealistik 3D renderlash",
+    "28": "HAR M2 uchun $30",
+    "29": "Smotret namuna v formate PDF"
   },
   "Hero": {
     "0": "LUXHOUSEGA Xush kelibsiz",
@@ -128,7 +158,7 @@
   "Trusted": {
     "0": "bizga ishon"
   },
-  "before_after" : {
-    "0" : "Farqni ko'rish uchun slayderni harakatlantiring"
+  "before_after": {
+    "0": "Farqni ko'rish uchun slayderni harakatlantiring"
   }
 }

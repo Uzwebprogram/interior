@@ -24,7 +24,18 @@ export const Wrapper = styled.div`
       line-height: 30px;
     }
   }
-
+  .h4one{
+  color: transparent;
+  margin: 42px 0px;
+  }
+  .h4two{
+  color: transparent;
+  margin: 23px 0px;
+  }
+  .h4three{
+  color: transparent;
+  margin: 0px 0px;
+  }
   .ContainerCard {
     margin-bottom: 30px;
     img {

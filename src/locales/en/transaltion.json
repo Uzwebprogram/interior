@@ -29,7 +29,7 @@
     "14": "Modern",
     "15": "Design and 3D visualization:",
     "16": "PROSVIRIN DESIGN",
-    "17" : "Year"
+    "17": "Year"
   },
 
   "AboutUs": {
@@ -73,11 +73,42 @@
   },
   "AddInterior": {
     "0": "I created an individual project, interior, premium class, online and lyuboy tochke mira",
-    "1": "WE CREATE ELITE INTERIORS"
+    "1": "WE CREATE ELITE INTERIORS",
+    "2": "Author's supervision",
+    "3": "Assembly",
+    "4": "Consultation"
   },
   "add_interior": {
     "0": "INTERIOR DESIGN SERVICES",
-    "1": "Repair Support Services:"
+    "1": "Repair Support Services:",
+    "2": "MINI PACKAGE",
+    "3": "Measurements",
+    "4": "7 detailed drawings to start the repair: (Measurement plan, plan for dismantling and installing partitions, furniture arrangement, plan for sockets, switches and lighting)",
+    "5": "100% individual project for your life.",
+    "6": "We take into account the norms for coordinating redevelopment",
+    "7": "$6 PER M2",
+    "8": "EXPRESS PACKAGE",
+    "9": "Measurements",
+    "10": "All necessary drawings for construction and procurement: (Plan of dismantling, installation, arrangement of furniture, plumbing, heating, sockets, switches, lighting, ceiling and flooring)",
+    "11": "Visual selection of furniture and decor for each room (moodboard in pictures).",
+    "12": "$12 PER M2",
+    "13": "SKETCH PACK",
+    "14": "Terms of reference with designer's consultation",
+    "15": "Measurements",
+    "16": "Planning solution with furniture and equipment",
+    "17": "Realistic sketches of the project",
+    "18": "Full working design: planning solution with furniture and equipment, all necessary drawings for construction and procurement.",
+    "19": "Adaptation of engineering projects of subcontractors",
+    "20": "$20 PER M2",
+    "21": "FULL PACKAGE",
+    "22": "Terms of Reference with designer's consultation",
+    "23": "Measurements",
+    "24": "Planning solution with furniture and equipment",
+    "25": "Full detailed design: All necessary drawings for construction and procurement.",
+    "26": "Adaptation of engineering projects of subcontractors",
+    "27": "Photorealistic 3D rendering",
+    "28": "$30 PER M2",
+    "29": "Primary image in PDF format"
   },
   "Hero": {
     "0": "WELCOME TO LUXHOUSE",
@@ -127,7 +158,7 @@
   "Trusted": {
     "0": "trust us"
   },
-  "before_after" : {
-    "0" : "Move the slider to see the difference"
+  "before_after": {
+    "0": "Move the slider to see the difference"
   }
 }

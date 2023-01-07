@@ -149,7 +149,7 @@ export const Section = styled.div`
     h2 {
       font-style: normal;
       font-weight: 300;
-      font-size: 40px;
+      font-size: 30px;
       line-height: 60px;
       text-align: center;
       letter-spacing: 0.07em;
