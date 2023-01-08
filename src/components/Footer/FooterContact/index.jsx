@@ -25,6 +25,7 @@ function FooterContact() {
   return (
     <Wrapper>
       <h2>{t("Footer.0")}</h2>
+      <p>{t("Footer.9")}</p>
       <CommonBtn
         onClick={handleOpen}
         style={{

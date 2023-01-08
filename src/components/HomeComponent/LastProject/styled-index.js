@@ -3,13 +3,15 @@ import styled from "styled-components";
 export const Section = styled.div`
   padding: 20px 0;
   h2 {
-    font-weight: 300;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 30px;
     line-height: 60px;
     text-align: center;
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: #ffffff;
+    margin: 0;
+    margin-bottom: 27px;
     @media only screen and (max-width: 425px) {
       font-size: 28px;
     }

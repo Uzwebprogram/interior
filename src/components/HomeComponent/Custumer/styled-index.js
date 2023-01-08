@@ -3,14 +3,15 @@ import styled from "styled-components";
 export const Section = styled.div`
   padding: 20px 0;
   h2 {
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 60px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 20px;
     letter-spacing: 0.07em;
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
-
+    margin: 0;
+    margin-bottom: 27px;
     @media only screen and (max-width: 425px) {
       font-size: 28px;
     }
@@ -53,7 +54,7 @@ export const Section = styled.div`
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
-      line-height: 38px;
+      line-height: 24px;
       text-transform: uppercase;
       color: #f3f3f3;
     }

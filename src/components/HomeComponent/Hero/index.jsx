@@ -27,9 +27,12 @@ import { PostCalculate } from "../../../redux/calculate";
 
 const Hero = () => {
   const [open, setOpen] = useState(false);
+  const [open2, setOpen2] = useState(false);
   const { t, i18n } = useTranslation();
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const handleOpen2 = () => setOpen2(true);
+  const handleClose2 = () => setOpen2(false);
   const Name = useRef();
   const Number = useRef();
   const [type, setType] = useState("");
@@ -50,7 +53,7 @@ const Hero = () => {
     setEtype(Value2);
   };
   const dispatch = useDispatch();
-  const HendelSubmit = (e) => {
+  const HendelSubmit = async (e) => {
     e.preventDefault();
     const calculate_name = Name.current.value;
     const phone_number = Number.current.value;
@@ -58,7 +61,9 @@ const Hero = () => {
     const house_type = Htype;
     const room_area = Rtype;
     const coment = descrip.current.value
-    dispatch(PostCalculate({calculate_name , phone_number , room_type , house_type , room_area , coment}))
+   await dispatch(PostCalculate({calculate_name , phone_number , room_type , house_type , room_area , coment}))
+   handleOpen2()
+   handleClose()
   };
   return (
     <>
@@ -212,6 +217,9 @@ const Hero = () => {
             <CommonBtn type={"submit"}>{t("HeroModal.20")}</CommonBtn>
           </Form>
         </ModalBody>
+      </ModalCommon>
+      <ModalCommon open={open2} handleClose={handleClose2}>
+      Salom
       </ModalCommon>
     </>
   );

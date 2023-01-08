@@ -20,8 +20,8 @@ export const InterContainer = styled.div`
       position: relative;
       h2 {
         font-style: normal;
-        font-weight: 100;
-        font-size: 40px;
+        font-weight: 600;
+        font-size: 30px;
         line-height: 60px;
         letter-spacing: 0.07em;
         text-transform: uppercase;

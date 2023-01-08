@@ -55,7 +55,8 @@
     "5": "O'zbekiston, Toshkent, Navoiy ko'chasi 9.",
     "6": "Elektron pochta manzili",
     "7": "Obuna bo'lish",
-    "8": "Aloqada bo'laylik"
+    "8": "Aloqada bo'laylik",
+    "9" : "Tayyor eskiz yo'qmi? Nimadan boshlashni bilmayapsizmi? Qiziqarli ijod olamiga xush kelibsiz!"
   },
   "Contact": {
     "0": "Kontaktlar"

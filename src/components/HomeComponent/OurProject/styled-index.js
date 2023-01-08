@@ -60,7 +60,7 @@ export const Section = styled.div`
       background: #fff;
       border: 1px solid #fff;
       width: 350px;
-      height: 525px;
+      height: 565px;
       @media only screen and (max-width: 768px) {
         height: 100px;
         width: 100%;
@@ -148,13 +148,15 @@ export const Section = styled.div`
 
     h2 {
       font-style: normal;
-      font-weight: 300;
+      font-weight: 600;
       font-size: 30px;
       line-height: 60px;
       text-align: center;
       letter-spacing: 0.07em;
       text-transform: uppercase;
       color: #ffffff;
+      margin: 0;
+    margin-bottom: 27px;
       @media only screen and (max-width: 425px) {
         font-size: 28px;
       }

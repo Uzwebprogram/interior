@@ -4,9 +4,8 @@ export const Wrapper = styled.div`
   text-align: center;
   h2 {
     font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 60px;
+    font-weight: 600;
+    font-size: 30px;
     text-align: center;
     letter-spacing: 0.07em;
     text-transform: uppercase;
@@ -14,13 +13,26 @@ export const Wrapper = styled.div`
     margin: 0;
     padding: 0;
     margin-top: 86px;
-    margin-bottom: 86px;
     @media only screen and (max-width: 510px) {
       margin-top: 56px;
-      margin-bottom: 56px;
       font-size: 30px;
     }
   }
+  p{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 66px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    width: 45%;
+    @media only screen and (max-width: 510px) {
+      margin-bottom: 56px;
+      font-size: 18px;
+    }
+}    
 `;
 export const Contact = styled.form`
   display: flex;
