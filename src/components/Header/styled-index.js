@@ -25,7 +25,6 @@ export const Wrapper = styled.div`
     .logo-media {
       display: none;
     }
-
     ul {
       margin: 0;
       padding: 0;
@@ -58,6 +57,13 @@ export const Wrapper = styled.div`
         .links{
             p{
                 margin: 0;
+            }
+        }
+
+        .active{
+          p{
+                margin: 0;
+                border-bottom: 2px solid #ff800b;
             }
         }
         a {
@@ -121,4 +127,12 @@ export const Wrapper = styled.div`
       }
     }
   }
+  .active-padding{
+          margin: 0;
+                border-bottom: 2px solid #ff800b;
+        }
+        .links-padding{
+          margin: 0;
+          color: red;
+        }
 `;

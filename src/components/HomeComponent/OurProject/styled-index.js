@@ -8,7 +8,6 @@ export const TabDiv = styled.div`
   text-transform: uppercase;
   color: red;
   min-height: 66px !important;
-
   @media only screen and (max-width: 583px) {
     width: 100% !important;
   }
@@ -49,7 +48,9 @@ export const BigTabs = styled.div`
 `;
 
 export const Section = styled.div`
-  padding: 20px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   .row {
     margin: 0 !important;
   }
@@ -156,7 +157,7 @@ export const Section = styled.div`
       text-transform: uppercase;
       color: #ffffff;
       margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 5px;
       @media only screen and (max-width: 425px) {
         font-size: 28px;
       }

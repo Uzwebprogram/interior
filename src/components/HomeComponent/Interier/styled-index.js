@@ -13,11 +13,17 @@ export const InterContainer = styled.div`
   .col {
     padding: 0 11px !important;
     margin: 5px 0 0 0;
-    height: 345px;
+    height: 50vh;
+    @media only screen and (max-width:920px) {
+          height: auto;
+      }
     div {
       width: 100%;
       height: 100%;
       position: relative;
+      @media only screen and (max-width:920px) {
+          height: auto;
+      }
       h2 {
         font-style: normal;
         font-weight: 600;

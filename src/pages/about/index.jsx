@@ -21,7 +21,7 @@ function About() {
   return (
     <>
       <CommonHero
-        style={{ padding: " 260px 0" }}
+        styleSection={{height:"100vh"}}
         bg={bg}
         isTitle={true}
         title2={t("About.1")}

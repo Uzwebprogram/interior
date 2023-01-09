@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Section = styled.div`
   padding: 20px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   h2 {
     font-weight: 600;
     font-size: 30px;

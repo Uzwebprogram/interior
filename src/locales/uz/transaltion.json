@@ -48,7 +48,7 @@
   },
   "Footer": {
     "0": "loyihangiz haqida gapiraylikmi?",
-    "1": "Buyurtma",
+    "1": "konsultatsiyaga buyurtma bering",
     "2": "Biz ichki dizayn xizmatlarining to'liq spektrini taqdim etamiz",
     "3": "Navigatsiya",
     "4": "Biz bilan bog'laning",
@@ -115,7 +115,8 @@
     "0": "LUXHOUSEGA Xush kelibsiz",
     "1": "Biz turar-joy va tijorat interyerlarini loyihalashtiramiz va amalga oshiramiz",
     "2": "Toshkentdagi kvartirangizning interyer dizaynini ishlab chiqamiz va orzuingizdek ta’mirlaymiz",
-    "3": "Loyihani hisoblash"
+    "3": "Loyihani hisoblash",
+    "4" : "Rahmat, biz siz bilan bog'lanamiz"
   },
   "HeroModal": {
     "0": "Loyihani hisoblash",

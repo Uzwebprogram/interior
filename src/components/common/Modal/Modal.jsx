@@ -13,7 +13,7 @@ function ModalCommon({ open, height, handleClose, children , width }){
     height: height,
     bgcolor: "#000",
     border: "2px solid #000",
-    overflowY: "scroll",
+    overflowY: "auto",
     boxShadow: "0px 0px 10px 2px #ff800b",
     p: 2,
   };

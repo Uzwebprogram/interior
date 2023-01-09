@@ -30,7 +30,7 @@ function FooterContact() {
         onClick={handleOpen}
         style={{
           width: "364px",
-          fontSize: "28px",
+          fontSize: "18px",
           fontWeight: "500",
           marginBottom: "86px",
         }}

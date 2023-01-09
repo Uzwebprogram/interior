@@ -48,7 +48,6 @@ const ImageGrid = () => {
           )}
           <ImageList
             className="grid-img"
-            sx={{ width: 500, height: 450 }}
             variant="quilted"
             cols={4}
             rowHeight={121}
@@ -56,6 +55,7 @@ const ImageGrid = () => {
             { GetproductsData.map((item) => (
               window.localStorage.getItem("aboutId") == item.category_id ?
               <ImageListItem
+                style={{height:"auto"}}
                 key={item.product_img1}
                 cols={item.cols || 1}
                 rows={item.rows || 2}
@@ -63,6 +63,7 @@ const ImageGrid = () => {
                 <img
                   {...srcset(item.product_img1, 121, item.rows, item.cols)}
                   alt="images Grid"
+            className="grid-img"
                   loading="lazy"
                   id={item.product_id}
                   onClick={HandleClickGrid}
@@ -80,8 +81,6 @@ const ImageGrid = () => {
           </h2>
           )}
           <ImageList
-            className="grid-img"
-            sx={{ width: 500, height: 450 }}
             variant="quilted"
             cols={4}
             rowHeight={24}
@@ -94,6 +93,7 @@ const ImageGrid = () => {
                 rows={12 || 2}
               >
                 <img
+                  className="grid-img"
                   {...srcset(item.product_img1, 121)}
                   alt="images Grid"
                   loading="lazy"

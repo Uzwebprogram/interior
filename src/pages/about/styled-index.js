@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
 h2{
     font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 30px;
     line-height: 60px;
     letter-spacing: 0.07em;
     text-transform: uppercase;
@@ -22,7 +22,7 @@ h2{
         font-family: 'Ruda';
         font-style: normal;
         font-weight: 400;
-        font-size: 46px;
+        font-size: 26px;
         line-height: 120%;
         text-align: center;
         letter-spacing: 0.01em;

@@ -13,19 +13,21 @@ export const Section = styled.div`
   }
   .col-img {
     width: 100%;
-    height: 100vh;
+    height: auto;
     @media only screen and (max-width: 425px) {
       width: 100%;
-      height: 350px;
+    height: auto;
+
     }
     @media only screen and (max-width: 375px) {
       width: 100%;
-      height: 300px;
+    height: auto;
+
     }
     @media only screen and (max-width: 320px) {
       width: 100%;
-      height: 250px;
-    }
+    height: auto;
+          }
   }
 `;
 export const ServiesImgContainer = styled.div`

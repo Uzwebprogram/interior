@@ -65,8 +65,8 @@ const Example = () => {
               <Col lg={5} md={12} sx={12} sm={12} className="col col-media">
                 <div className="col-content-wrapper">
                   <img
-                    width={62}
-                    height={62}
+                    width={42}
+                    height={42}
                     style={{ marginLeft: "23px" }}
                     src={location}
                     alt=""
@@ -77,7 +77,7 @@ const Example = () => {
                   </div>
                 </div>
                 <div className="col-content-wrapper">
-                  <img width={62} height={62} src={square} alt="" />
+                  <img width={52} height={52} src={square} alt="" />
                   <div className="col-content">
                     <h4>{t("Example.10")}</h4>
                     <p>{elem.metr}</p>
@@ -85,8 +85,8 @@ const Example = () => {
                 </div>
                 <div className="col-content-wrapper">
                   <img
-                    width={40}
-                    height={39}
+                    width={30}
+                    height={29}
                     style={{ marginLeft: "35px" }}
                     src={calendar}
                     alt=""
@@ -96,32 +96,7 @@ const Example = () => {
                     <p>{DateFormat(elem.date)}</p>
                   </div>
                 </div>
-                <div className="col-content-wrapper">
-                  <img
-                    width={62}
-                    height={62}
-                    style={{ marginLeft: "25px" }}
-                    src={light}
-                    alt=""
-                  />
-                  <div className="col-content">
-                    <h4>{t("Example.13")}</h4>
-                    <p>{elem.still}</p>
-                  </div>
-                </div>
-                <div className="col-content-wrapper">
-                  <img
-                    width={62}
-                    height={62}
-                    style={{ marginLeft: "27px" }}
-                    src={user}
-                    alt=""
-                  />
-                  <div className="col-content">
-                    <h4>{t("Example.15")}</h4>
-                    <p>{elem.design}</p>
-                  </div>
-                </div>
+
               </Col>
             </Row>
           ))}

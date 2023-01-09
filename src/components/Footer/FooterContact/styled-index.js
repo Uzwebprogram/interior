@@ -31,6 +31,7 @@ export const Wrapper = styled.div`
     @media only screen and (max-width: 510px) {
       margin-bottom: 56px;
       font-size: 18px;
+      width: 100%;
     }
 }    
 `;

@@ -69,7 +69,6 @@ export const Section = styled.div`
       @media only screen and (max-width: 375px) {
         font-size: 14px;
       }
-
       :nth-child(3) {
         margin-top: 10px;
       }

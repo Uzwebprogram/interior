@@ -8,13 +8,13 @@ import {
   ModalBody,
   Form,
   InputControls,
+  Success
 } from "./styled-index";
 import { Col, Row } from "react-grid-system";
 import { useTranslation } from "react-i18next";
 import ModalCommon from "../../common/Modal/Modal";
 import CommonBtn from "../../common/CommonBtn";
 import CommonInput from "../../common/CommonInput";
-
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -24,7 +24,7 @@ import CommonHero from "../../common/CommonHero";
 import heroBg from "../../../assets/home/home-hero.jpg";
 import { useDispatch } from "react-redux";
 import { PostCalculate } from "../../../redux/calculate";
-
+import SuccessIcon from "../../../assets/image/Home/icon-success.png"
 const Hero = () => {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
@@ -73,7 +73,7 @@ const Hero = () => {
         btnText={t("Hero.3")}
         setOpen={handleOpen}
         isTitle={true}
-        styleSection={{ padding: "212px 0px" }}
+        styleSection={{height:"100vh"}}
         isButton={true}
         isIcon={true}
         bg={bg}
@@ -93,12 +93,14 @@ const Hero = () => {
           <Form onSubmit={HendelSubmit}>
             <label className="labelInput" htmlFor="name">{t("HeroModal.2")}</label>
             <input
+              required
               placeholder={t("HeroModal.3")}
               type={"text"}
               ref={Name}
             />
             <label className="labelInput" htmlFor="number">{t("HeroModal.4")}</label>
             <input
+              required
               placeholder={"+998 90 000 00 00"}
               type={"tel"}
               ref={Number}
@@ -107,6 +109,7 @@ const Hero = () => {
               <h4>{t("HeroModal.5")}</h4>
               <div className="radioGruop">
                 <input
+                  required
                   type="radio"
                   id="html1"
                   name="fav_language1"
@@ -116,6 +119,7 @@ const Hero = () => {
               </div>
               <div className="radioGruop">
                 <input
+                  required
                   type="radio"
                   id="html1"
                   name="fav_language1"
@@ -125,6 +129,7 @@ const Hero = () => {
               </div>
               <div className="radioGruop">
                 <input
+                  required
                   type="radio"
                   id="html1"
                   name="fav_language1"
@@ -138,6 +143,7 @@ const Hero = () => {
               <h4>{t("HeroModal.9")}</h4>
               <div className="radioGruop">
                 <input
+                  required
                   type="radio"
                   id="html2"
                   name="fav_language2"
@@ -147,6 +153,7 @@ const Hero = () => {
               </div>
               <div className="radioGruop">
                 <input
+                  required
                   type="radio"
                   id="html2"
                   name="fav_language2"
@@ -160,6 +167,7 @@ const Hero = () => {
               <h4>{t("HeroModal.12")}</h4>
               <div className="radioGruop">
                 <input
+                  required
                   type="radio"
                   id="html3"
                   name="fav_language3"
@@ -169,6 +177,7 @@ const Hero = () => {
               </div>
               <div className="radioGruop">
                 <input
+                  required
                   type="radio"
                   id="html3"
                   name="fav_language3"
@@ -178,6 +187,7 @@ const Hero = () => {
               </div>
               <div className="radioGruop">
                 <input
+                  required
                   type="radio"
                   id="html3"
                   name="fav_language3"
@@ -187,6 +197,7 @@ const Hero = () => {
               </div>
               <div className="radioGruop">
                 <input
+                  required
                   type="radio"
                   id="html3"
                   name="fav_language3"
@@ -196,6 +207,7 @@ const Hero = () => {
               </div>
               <div className="radioGruop">
                 <input
+                  required
                   type="radio"
                   id="html3"
                   name="fav_language3"
@@ -207,6 +219,7 @@ const Hero = () => {
             <div className="radio-wrapper">
               <h4>{t("HeroModal.18")}</h4>
               <textarea
+                required
                 width="100%"
                 cols="30"
                 rows="5"
@@ -219,7 +232,11 @@ const Hero = () => {
         </ModalBody>
       </ModalCommon>
       <ModalCommon open={open2} handleClose={handleClose2}>
-      Salom
+        <Success >
+        <img src={SuccessIcon} width={71} height={71} alt="" />
+        <p>{t("Hero.4")}</p>
+        <button onClick={handleClose2}>Ok</button>
+        </Success>
       </ModalCommon>
     </>
   );

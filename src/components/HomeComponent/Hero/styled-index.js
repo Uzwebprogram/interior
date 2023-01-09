@@ -139,3 +139,27 @@ export const InputControls = styled.div`
     color: #fff;
   }
 `;
+export const Success = styled.div`
+  text-align: center;
+  p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  button{
+    background: #FFFFFF;
+    border-radius: 7px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    padding: 15px;
+    width: 74px;
+    cursor: pointer;
+  }
+`

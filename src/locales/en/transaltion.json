@@ -48,7 +48,7 @@
   },
   "Footer": {
     "0": "let's talk about your project?",
-    "1": "Order",
+    "1": "request a consultation",
     "2": "We provide a full range of interior design services",
     "3": "Navigation",
     "4": "Contact us",
@@ -115,7 +115,8 @@
     "0": "WELCOME TO LUXHOUSE",
     "1": "I design and realize residential and commercial interiors",
     "2": "We will develop an interior design and make a dream renovation in your apartment in Tashkent.",
-    "3": "Calculate project"
+    "3": "Calculate project",
+    "4" : "Thank you, we'll contact you"
   },
   "HeroModal": {
     "0": "Calculate project",

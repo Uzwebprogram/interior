@@ -5,6 +5,8 @@ export const Section = styled.div`
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 `;
 
 export const RowWrap = styled.div`
@@ -16,7 +18,6 @@ export const RowWrap = styled.div`
     position: absolute;
     bottom: -30%;
     left: 46%;
-
     @media only screen and (max-width: 425px) {
       bottom: -40%;
       left: 40%;

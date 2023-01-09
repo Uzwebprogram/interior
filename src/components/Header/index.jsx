@@ -3,7 +3,7 @@ import { Wrapper } from "./styled-index";
 import { WrapperContainer } from "../../style-App";
 import Logo from "./../../assets/image/Header/Logo.svg";
 import LogoMedia from "./../../assets/image/Header/LogoMedia.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageHeader from "./header-language";
 import HamburgerMenu from "./hamburger-menu";
@@ -26,6 +26,8 @@ function Header() {
     dispatch(Getcategories(window.localStorage.getItem("aboutId")))
     navigate("/aboutUs")
   }
+  const pathname = useLocation();
+  console.log();
   return (
     <>
       <Wrapper>
@@ -34,36 +36,35 @@ function Header() {
             <NavLink to={"/"}>
               <img className="logo" src={Logo} width={152} height={38} alt="" />
             </NavLink>
-
             <ul>
               <li>
-                <NavLink className='links' to={"/"}>
+                <NavLink className={pathname == "/" ? 'active' : "links"} to={"/"}>
                   <p>{t("Header.0")}</p>
                 </NavLink>
               </li>
               <li>
        
-                <p className='links'  id="1" onClick={HandleClickAbout}>
+                <p className={pathname.pathname == "/aboutUs" && window.localStorage.getItem("aboutId") == "1" ? 'active-padding' : "links-padding"} id="1" onClick={HandleClickAbout}>
                   {t("Header.1")}
                 </p>
               </li>
               <li>
-                <p className='links' id="2" onClick={HandleClickAbout}>
+                <p className={pathname.pathname == "/aboutUs" && window.localStorage.getItem("aboutId") == "2" ? 'active-padding' : "links-padding"}  id="2" onClick={HandleClickAbout}>
                   {t("Header.2")}
                 </p>
               </li>
               <li>
-              <NavLink className='links' to={"/projects"}>
+              <NavLink className={pathname == "/projects" ? 'active' : "links"}  to={"/projects"}>
                   <p>{t("Header.3")}</p>
                 </NavLink>
               </li>
               <li>
-                <NavLink className='links' to={"/portfolio"}>
+                <NavLink className={pathname == "/portfolio" ? 'active' : "links"} to={"/portfolio"}>
                   <p>{t("Header.4")}</p>
                 </NavLink>
               </li>
               <li>
-                <NavLink className='links' to={"/addinterior"}>
+                <NavLink className={pathname == "/addinterior" ? 'active' : "links"} to={"/addinterior"}>
                   <p>{t("Header.5")}</p>
                 </NavLink>
               </li>
