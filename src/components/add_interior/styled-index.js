@@ -4,8 +4,8 @@ export const Wrapper = styled.div`
   margin-top: 20px;
   h2 {
     font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 30px;
     line-height: 60px;
     text-align: center;
     letter-spacing: 0.07em;

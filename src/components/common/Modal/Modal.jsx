@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-
+import "./app.css"
 
 function ModalCommon({ open, height, handleClose, children , width }){
   const style = {
@@ -25,6 +25,7 @@ function ModalCommon({ open, height, handleClose, children , width }){
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="modal"
       >
         <Box sx={style}>{children}</Box>
       </Modal>

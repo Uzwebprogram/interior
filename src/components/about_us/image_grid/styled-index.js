@@ -65,8 +65,5 @@ export const GridContainerMobile = styled.div`
       .grid-img{
         height: auto !important;
       }
-      .css-l086p4-MuiImageListItem-root{
-        height: auto !important;
-      }
     }
 `

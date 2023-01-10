@@ -70,9 +70,9 @@ export const BeforeContainer = styled.div`
     }
 
     h3 {
+      padding: 0;
       color: #000;
-      font-weight: 300;
-      font-family: "Ruda";
+      font-weight: 600;
       font-size: 25px;
       line-height: 38px;
       letter-spacing: 0.1em;

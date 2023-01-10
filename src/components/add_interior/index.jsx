@@ -36,7 +36,7 @@ function AddInteriorComponent() {
             <li>{t("add_interior.7")}</li>
             <hr />
             <li>
-              <h4 className="h4two">blalbalblalblabl</h4>
+              <h4 className="h4two">___________</h4>
             </li>
           </ul>
           <button>
@@ -61,7 +61,7 @@ function AddInteriorComponent() {
             <li>{t("add_interior.12")}</li>
             <hr />
             <li>
-              <h4 className="h4one">blalbalblalblabl</h4>
+              <h4 className="h4one">______________</h4>
             </li>
           </ul>
           <button>
@@ -120,7 +120,7 @@ function AddInteriorComponent() {
             <li>{t("add_interior.28")}</li>
             <hr />
             <li>
-              <h4 className="h4three">blablablabla</h4>
+              <h4 className="h4three">____________</h4>
             </li>
           </ul>
           <button>

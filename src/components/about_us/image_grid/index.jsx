@@ -55,7 +55,7 @@ const ImageGrid = () => {
             { GetproductsData.map((item) => (
               window.localStorage.getItem("aboutId") == item.category_id ?
               <ImageListItem
-                style={{height:"auto"}}
+                style={{height:"auto !important"}}
                 key={item.product_img1}
                 cols={item.cols || 1}
                 rows={item.rows || 2}
@@ -88,6 +88,7 @@ const ImageGrid = () => {
             { GetproductsData.map((item) => (
               window.localStorage.getItem("aboutId") == item.category_id ?
               <ImageListItem
+              style={{height:"auto !important"}}
                 key={item.product_img1}
                 cols={6 || 1}
                 rows={12 || 2}

@@ -4,8 +4,8 @@ export const Wrapper = styled.div`
     padding-top: 62px;
     h2{
         font-style: normal;
-        font-weight: 300;
-        font-size: 45px;
+        font-weight: 600;
+        font-size: 30px;
         line-height: 64px;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -20,8 +20,8 @@ export const Wrapper = styled.div`
     }
     a{
         font-style: normal;
-        font-weight: 300;
-        font-size: 45px;
+        font-weight: 600;
+        font-size: 30px;
         line-height: 58px;
         text-transform: uppercase;
         color: #FFFFFF;
