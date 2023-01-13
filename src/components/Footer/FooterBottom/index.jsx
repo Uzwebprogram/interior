@@ -61,10 +61,10 @@ function FooterBottom() {
               >
                 <img src={Instagram} width={30} height={30} alt="" />
               </a>
-              <a href="https://youtu.be/hePn0bolmVU" target="_blank">
+              <a href="https://www.youtube.com/@luxhouse7613" target="_blank">
                 <img src={Youtube} width={30} height={30} alt="" />
               </a>
-              <a href="https://t.me/L_H_STUDIO" target="_blank">
+              <a href="https://t.me/luxhousestudio" target="_blank">
                 <img src={Telegram} width={30} height={30} alt="" />
               </a>
             </div>
@@ -156,9 +156,7 @@ function FooterBottom() {
               />
               <a href="mailto:luxhouse@gmail.com" >luxhouse@gmail.com</a>
             </div>
-            <div className="Footer-Address-Button">
-              <p>{t("Footer.6")}</p>
-            </div>
+
           </Col>
         </Row>
       </WrapperContainer>

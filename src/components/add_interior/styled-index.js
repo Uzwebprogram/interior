@@ -79,7 +79,11 @@ export const Wrapper = styled.div`
     img {
       width: 100%;
     }
-    p {
+    @media only screen and (max-width:768px) {
+    margin-top: 70px;
+    }
+      .padding-top {
+
       font-style: normal;
       font-weight: 300;
       font-size: 25px;
@@ -92,6 +96,33 @@ export const Wrapper = styled.div`
       padding: 0;
       margin-bottom: 10px;
       padding: 26px 0;
+    }
+    .padding-bottom{
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 38px;
+      letter-spacing: 0.01em;
+      color: black;
+      border: 2px solid white;
+      background: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+      padding: 26px 0;
+    }
+    a {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 38px;
+      letter-spacing: 0.01em;
+      color: #000;
+      background: transparent;
+      text-align: center;
+      margin: 0;
+      padding: 0;
     }
   }
 

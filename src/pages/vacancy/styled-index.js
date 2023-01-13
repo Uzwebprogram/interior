@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
     }
     .Card{
         border: 5px solid #FFFFFF;
+        background-color: white;
         border-radius: 3px;
         padding:10px;
         .top{
@@ -27,7 +28,7 @@ export const Wrapper = styled.div`
             font-size: 25px;
             line-height: 120%;
             letter-spacing: 0.01em;
-            color: #FFFFFF;
+            color: #000;
         }
         span{
             font-family: 'Ruda';
@@ -36,7 +37,7 @@ export const Wrapper = styled.div`
             font-size: 18px;
             line-height: 130%;
             letter-spacing: 0.01em;
-            color: #AAAAAA;
+            color: #AAA;
         }
         }
         p:nth-child(2){
@@ -46,7 +47,7 @@ export const Wrapper = styled.div`
             font-size: 18px;
             line-height: 120%;
             letter-spacing: 0.11em;
-            color: #FFFFFF;
+            color: #000;
         }
     }
       button{

@@ -7,27 +7,28 @@ export const Section = styled.div`
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  i {
+    color: #000;
+    font-size: 66px;
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    @media only screen and (max-width: 425px) {
+      left: 40%;
+    bottom: 3%;
+    }
+
+    @media only screen and (max-width: 375px) {
+      bottom: 3%;
+      left: 39%;
+    }
+  }
 `;
 
 export const RowWrap = styled.div`
   position: relative;
   margin: 0 !important;
-  i {
-    color: #000;
-    font-size: 66px;
-    position: absolute;
-    bottom: -30%;
-    left: 46%;
-    @media only screen and (max-width: 425px) {
-      bottom: -40%;
-      left: 40%;
-    }
 
-    @media only screen and (max-width: 375px) {
-      bottom: -36%;
-      left: 39%;
-    }
-  }
 `;
 
 export const ColItem = styled.div`

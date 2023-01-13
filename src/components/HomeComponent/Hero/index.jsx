@@ -21,7 +21,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import CommonHero from "../../common/CommonHero";
-import heroBg from "../../../assets/home/home-hero.jpg";
+import heroBg from "../../../assets/image/home-bg.jpg";
 import { useDispatch } from "react-redux";
 import { PostCalculate } from "../../../redux/calculate";
 import SuccessIcon from "../../../assets/image/Home/icon-success.png"

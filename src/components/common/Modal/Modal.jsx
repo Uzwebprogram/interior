@@ -25,9 +25,9 @@ function ModalCommon({ open, height, handleClose, children , width }){
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
-        className="modal"
       >
-        <Box sx={style}>{children}</Box>
+        
+        <Box sx={style} className="modal">{children}</Box>
       </Modal>
     </>
   );

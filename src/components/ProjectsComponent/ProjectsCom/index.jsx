@@ -7,9 +7,6 @@ import "./twentytwenty.css";
 import Before_After_Icon from "./../../../assets/image/beforeVSafter/icon_before_black.svg"
 import { GetSingle } from "../../../redux/before-after";
 
-import After from "../../../assets/image/after.png";
-import Before from "../../../assets/image/hero.png";
-import icons1 from "../../../assets/image/beforeVSafter/icons1.png";
 import { useTranslation } from "react-i18next";
 const arr = [1, 2, 3, 4];
 const ProjectsCom = () => {

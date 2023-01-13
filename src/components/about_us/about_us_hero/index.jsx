@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CommonHero from "../../common/CommonHero/index";
-import hero from "../../../assets/image/servies/about.jpg";
+import hero from "../../../assets/image/About/jily.jpg";
 import { useTranslation } from "react-i18next";
 import ModalCommon from "../../common/Modal/Modal";
 import CommonInput from "../../common/CommonInput";
@@ -10,17 +10,22 @@ import {
   ModalHeader,
   Form,
 } from "../../HomeComponent/Hero/styled-index";
+import Komerchskiy from "./../../../assets/image/About/komerchsky.jpg"
+import { useLocation } from "react-router-dom";
 
 const AboutUsHero = () => {
   const [bg, setBg] = useState(hero);
+  const [bg2, setBg2] = useState(Komerchskiy);
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const pathname = useLocation();
+
   return (
     <>
       <CommonHero
-        bg={bg}
+        bg={pathname.pathname === "/jily" ?  bg :pathname.pathname === "/komerchskiy" ? bg2 : null}
         title2={t("AboutUs.0")}
         btnText={t("Hero.3")}
         text={t("AboutUs.1")}

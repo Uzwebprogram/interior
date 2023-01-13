@@ -15,14 +15,21 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
   };
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const HandleClickAbout = async (e) => {
-    await window.localStorage.setItem("aboutId", e.target.value);
-    dispatch(Getcategories(window.localStorage.getItem("aboutId")));
-    navigate("/aboutUs");
-    HandleClickClose()
-  };
+
   function LanguValue() {
     return window.localStorage.getItem("i18nextLng");
+  }
+  const HandleClickAbout = async (e) =>{
+    await window.localStorage.setItem("aboutId" , e.target.value)
+    dispatch(Getcategories(window.localStorage.getItem("aboutId")))
+    navigate("/komerchskiy")
+    HandleClickClose();
+  }
+  const HandleClickAbout2 = async (e) =>{
+    await window.localStorage.setItem("aboutId" , e.target.value)
+    dispatch(Getcategories(window.localStorage.getItem("aboutId")))
+    navigate("/jily")
+    HandleClickClose();
   }
   const data = [
     {
@@ -44,6 +51,11 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
       id: 5,
       title: "Header.5",
       link: "/addinterior",
+    },
+    {
+      id: 6,
+      title: "Header.3",
+      link: "/projects",
     },
   ];
   return (
@@ -100,7 +112,7 @@ function HamburgerMenu({ HamburgerClick, HandleClickClose }) {
             <hr />
 
             <li>
-              <button className="links" value="2" onClick={HandleClickAbout}>
+              <button className="links" value="2" onClick={HandleClickAbout2}>
                 {t("Header.2")}
               </button>
             </li>

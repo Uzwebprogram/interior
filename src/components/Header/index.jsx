@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Wrapper } from "./styled-index";
 import { WrapperContainer } from "../../style-App";
 import Logo from "./../../assets/image/Header/Logo.svg";
-import LogoMedia from "./../../assets/image/Header/LogoMedia.svg";
 import { NavLink, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageHeader from "./header-language";
@@ -24,10 +23,19 @@ function Header() {
   const HandleClickAbout = async (e) =>{
     await window.localStorage.setItem("aboutId" , e.target.id)
     dispatch(Getcategories(window.localStorage.getItem("aboutId")))
-    navigate("/aboutUs")
+    navigate("/komerchskiy")
+  }
+  const HandleClickAbout2 = async (e) =>{
+    await window.localStorage.setItem("aboutId" , e.target.id)
+    dispatch(Getcategories(window.localStorage.getItem("aboutId")))
+    navigate("/jily")
   }
   const pathname = useLocation();
-  console.log();
+  if (pathname.pathname === "/komerchskiy") {
+    window.localStorage.setItem("aboutId" , 1)
+  }else if(pathname.pathname === "/jily"){
+    window.localStorage.setItem("aboutId" , 2)
+  }
   return (
     <>
       <Wrapper>
@@ -44,12 +52,12 @@ function Header() {
               </li>
               <li>
        
-                <p className={pathname.pathname == "/aboutUs" && window.localStorage.getItem("aboutId") == "1" ? 'active-padding' : "links-padding"} id="1" onClick={HandleClickAbout}>
+                <p className={pathname.pathname == "/komerchskiy" && window.localStorage.getItem("aboutId") == "1" ? 'active-padding' : "links-padding"} id="1" onClick={HandleClickAbout}>
                   {t("Header.1")}
                 </p>
               </li>
               <li>
-                <p className={pathname.pathname == "/aboutUs" && window.localStorage.getItem("aboutId") == "2" ? 'active-padding' : "links-padding"}  id="2" onClick={HandleClickAbout}>
+                <p className={pathname.pathname == "/jily" && window.localStorage.getItem("aboutId") == "2" ? 'active-padding' : "links-padding"}  id="2" onClick={HandleClickAbout2}>
                   {t("Header.2")}
                 </p>
               </li>

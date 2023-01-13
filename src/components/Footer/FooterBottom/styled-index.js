@@ -91,7 +91,7 @@ export const Wrapper = styled.div`
   }
   .Col-Right {
     p {
-      margin-top: 64px;
+      margin-top: 27px;
       width: 70%;
       font-family: "Ruda";
       font-style: normal;

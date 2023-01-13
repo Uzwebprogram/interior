@@ -9,8 +9,11 @@ import Pdf1 from "../../assets/pdf/mini.pdf";
 import Pdf2 from "../../assets/pdf/exs.pdf";
 import Pdf3 from "../../assets/pdf/exx.pdf";
 import Pdf4 from "../../assets/pdf/pol.pdf";
-
-
+import Pdf5 from "../../assets/pdf/luxouse-about.pdf"
+import TopImg1  from "./.../../../../assets/image/addinterior/Лист-1 Мини пакет.jpg"
+import TopImg2  from "./.../../../../assets/image/addinterior/Лист-2 экспресс пакет.jpg"
+import TopImg3  from "./.../../../../assets/image/addinterior/Лист-3 эскизный пакет .jpg"
+import TopImg4  from "./.../../../../assets/image/addinterior/Лист-4 польный пакет .png"
 function AddInteriorComponent() {
   const data = [1, 2, 3, 4];
   const { t, i18n } = useTranslation();
@@ -20,7 +23,7 @@ function AddInteriorComponent() {
       <Row component={RowDiv}>
         <Col lg={3} md={12} className="ContainerCard">
           <img
-            src="http://cdn.home-designing.com/wp-content/uploads/2019/04/living-room-pendant-light.jpg"
+            src={TopImg1}
             alt=""
           />
           <h3>{t("add_interior.2")}</h3>
@@ -33,8 +36,7 @@ function AddInteriorComponent() {
             <hr />
             <li>{t("add_interior.6")}</li>
             <hr />
-            <li>{t("add_interior.7")}</li>
-            <hr />
+
             <li>
               <h4 className="h4two">___________</h4>
             </li>
@@ -47,7 +49,7 @@ function AddInteriorComponent() {
         </Col>
         <Col lg={3} md={12} className="ContainerCard">
           <img
-            src="http://cdn.home-designing.com/wp-content/uploads/2019/04/living-room-pendant-light.jpg"
+                       src={TopImg2}
             alt=""
           />
           <h3>{t("add_interior.8")}</h3>
@@ -58,8 +60,7 @@ function AddInteriorComponent() {
             <hr />
             <li>{t("add_interior.11")}</li>
             <hr />
-            <li>{t("add_interior.12")}</li>
-            <hr />
+
             <li>
               <h4 className="h4one">______________</h4>
             </li>
@@ -72,7 +73,8 @@ function AddInteriorComponent() {
         </Col>
         <Col lg={3} md={12} className="ContainerCard">
           <img
-            src="http://cdn.home-designing.com/wp-content/uploads/2019/04/living-room-pendant-light.jpg"
+             src={TopImg3}
+             height={206}
             alt=""
           />
           <h3>{t("add_interior.13")}</h3>
@@ -89,8 +91,7 @@ function AddInteriorComponent() {
             <hr />
             <li>{t("add_interior.19")}</li>
             <hr />
-            <li>{t("add_interior.20")}</li>
-            <hr />
+
           </ul>
           <button>
           <a href={Pdf3} download="ЭСКИЗНЫЙ ПАКЕТ">
@@ -100,7 +101,7 @@ function AddInteriorComponent() {
         </Col>
         <Col lg={3} md={12} className="ContainerCard">
           <img
-            src="http://cdn.home-designing.com/wp-content/uploads/2019/04/living-room-pendant-light.jpg"
+             src={TopImg4}
             alt=""
           />
           <h3>{t("add_interior.21")}</h3>
@@ -117,14 +118,12 @@ function AddInteriorComponent() {
             <hr />
             <li>{t("add_interior.27")}</li>
             <hr />
-            <li>{t("add_interior.28")}</li>
-            <hr />
             <li>
               <h4 className="h4three">____________</h4>
             </li>
           </ul>
           <button>
-            <a href={Pdf4} download="MПОЛНЫЙ ПАКЕТ">
+            <a href={Pdf4} download="ПОЛНЫЙ ПАКЕТ">
               {t("add_interior.29")}
             </a>
           </button>
@@ -133,16 +132,21 @@ function AddInteriorComponent() {
       <h2>{t("add_interior.1")}</h2>
       <Row component={RowDiv}>
         <Col className="Card" lg={4} md={12}>
-          <p>{t("AddInterior.2")}</p>
+          <p className="padding-top">{t("AddInterior.2")}</p>
           <img height={300} src={Img3} alt="" />
+          <p className="padding-bottom">  <a download={"подробнее"} href={Pdf5}>подробнее</a></p>
         </Col>
         <Col className="Card" lg={4} md={12}>
-          <p>{t("AddInterior.3")}</p>
+          <p className="padding-top">{t("AddInterior.3")}</p>
           <img height={300} src={Img1} alt="" />
+          <p className="padding-bottom">  <a download={"подробнее"} href={Pdf5}>подробнее</a></p>
+
         </Col>
         <Col className="Card" lg={4} md={12}>
-          <p>{t("AddInterior.4")}</p>
+          <p className="padding-top">{t("AddInterior.4")}</p>
           <img height={300} src={Img2} alt="" />
+          <p className="padding-bottom">  <a download={"подробнее"} href={Pdf5}>подробнее</a></p>
+
         </Col>
       </Row>
     </Wrapper>

@@ -52,12 +52,17 @@ export const RouterData = [
   },
   {
     id: 9,
-    path: "/servies",
+    path: "/servies/:productId",
     component: <Servies />,
   },
   {
     id: 10,
-    path: "/aboutUs",
+    path: "/komerchskiy",
+    component: <AboutUs />,
+  },
+  {
+    id: 11,
+    path: "/jily",
     component: <AboutUs />,
   },
 ];

@@ -11,27 +11,31 @@ const Interier = () => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const HandleClick = async (e) => {
-    console.log(e.target.id);
-      await window.localStorage.setItem("aboutId" , e.target.id)
-      dispatch(Getcategories(window.localStorage.getItem("aboutId")))
-      navigate("/aboutUs")
+  const HandleClickAbout = async (e) =>{
+    await window.localStorage.setItem("aboutId" , e.target.id)
+    dispatch(Getcategories(window.localStorage.getItem("aboutId")))
+    navigate("/komerchskiy")
+  }
+  const HandleClickAbout2 = async (e) =>{
+    await window.localStorage.setItem("aboutId" , e.target.id)
+    dispatch(Getcategories(window.localStorage.getItem("aboutId")))
+    navigate("/jily")
   }
   return (
     <>
       <Section>
         <InterContainer>
           <Row className="row">
-            <Col id="1" onClick={HandleClick} md={12} lg={12} className='col'>
-              <div id="1" onClick={HandleClick}>
-                <h2 id="1" onClick={HandleClick}>{t("Interier.0")}</h2>
-                <img  id="1" onClick={HandleClick} src={komerchskiy} alt="image" />
+            <Col id="1" onClick={HandleClickAbout} md={12} lg={12} className='col'>
+              <div id="1" onClick={HandleClickAbout}>
+                <h2 id="1" onClick={HandleClickAbout}>{t("Interier.0")}</h2>
+                <img  id="1" onClick={HandleClickAbout} src={komerchskiy} alt="image" />
               </div>
             </Col>
-            <Col id="2" onClick={HandleClick} md={12} lg={12} className='col'>
-              <div id="2"onClick={HandleClick}  >
-                <h2 id="2" onClick={HandleClick} >{t("Interier.1")}</h2>
-                <img id="2" onClick={HandleClick}  src={jily} alt="image" />
+            <Col id="2" onClick={HandleClickAbout2} md={12} lg={12} className='col'>
+              <div id="2"onClick={HandleClickAbout2}  >
+                <h2 id="2" onClick={HandleClickAbout2} >{t("Interier.1")}</h2>
+                <img id="2" onClick={HandleClickAbout2}  src={jily} alt="image" />
               </div>
             </Col>
           </Row>

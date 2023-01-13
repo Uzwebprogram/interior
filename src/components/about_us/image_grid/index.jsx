@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { Getcategories, GetproductsId } from "../../../redux/about";
 import {Getproducts} from "./../../../redux/about"
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 function srcset(image, size, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -20,6 +20,8 @@ const ImageGrid = () => {
     const {t, i18n} = useTranslation()
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const { productId } = useParams();
+    console.log(productId);
     useEffect(() => {
       dispatch(Getcategories(window.localStorage.getItem("aboutId")))
     }, [])
@@ -30,7 +32,7 @@ const ImageGrid = () => {
     const GetproductsData = useSelector(state => state.categories?.getproducts?.Data)
     const HandleClickGrid = async (e) => {
      await  window.localStorage.setItem("MoreId" , e.target.id)
-      navigate("/servies");
+      navigate(`/servies/${e.target.id}`);
       dispatch(GetproductsId(window.localStorage.getItem("MoreId")))
     }
     function GetLanguage() {

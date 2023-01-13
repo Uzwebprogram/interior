@@ -4,10 +4,10 @@ const FixedAnime = () => {
   return (
     <>
       <Wrapper>
-        <a href="https://t.me/L_H_STUDIO">
+        <a href="https://t.me/luxhousestudio">
         <i class='bx bxl-telegram'></i>
         </a>
-        <a href="tel:+99888 111 90 90 t">
+        <a href="tel:+99888 111 90 90">
         <i class='bx bx-phone'></i>
         </a>
       </Wrapper>

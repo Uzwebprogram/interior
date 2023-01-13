@@ -31,10 +31,13 @@ const CommonHero = ({
               ) : null}
             </Col>
 
-            {isIcon ? <i class='bx bxs-chevron-down bx-fade-up' ></i> : null}
+
           </Row>
         </WrapperContainer>
+        {isIcon ? <i class='bx bx-chevron-down bx-fade-up'  style={{color:"white" , fontSize:"70px" , }} ></i>
+            : null}
       </Section>
+      
     </>
   );
 };

@@ -11,9 +11,9 @@ export const InterContainer = styled.div`
   }
 
   .col {
-    padding: 0 11px !important;
     margin: 5px 0 0 0;
-    height: 50vh;
+    height: 45.5vh;
+    cursor: pointer;
     @media only screen and (max-width:920px) {
           height: auto;
       }
@@ -21,6 +21,7 @@ export const InterContainer = styled.div`
       width: 100%;
       height: 100%;
       position: relative;
+    cursor: pointer;
       @media only screen and (max-width:920px) {
           height: auto;
       }
@@ -35,7 +36,8 @@ export const InterContainer = styled.div`
         position: absolute;
         top:50%;
         transform: translateY(-116%);
-        left: 50px;
+        left: 11%;
+    cursor: pointer;
 
         @media only screen and (max-width: 768px) {
             font-size: 32px;
@@ -67,11 +69,13 @@ export const InterContainer = styled.div`
       height: 100%;
         mix-blend-mode: lighten;
         opacity: 0.53;
+    cursor: pointer;
       }
     }
   }
 
   .col:nth-child(1){
     margin-top: 10px;
+    cursor: pointer;
   }
 `;

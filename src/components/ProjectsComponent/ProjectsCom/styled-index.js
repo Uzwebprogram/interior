@@ -8,15 +8,14 @@ export const BeforeContainer = styled.div`
   max-width: 98%;
   width: 100%;
   margin: 0 auto;
-
   .twenty-img {
     width: 100%;
     height: 90vh !important;
     @media only screen and (max-width: 768px) {
-      height: 360px;
+      height: 360px !important;
     }
     @media only screen and (max-width: 425px) {
-      height: 270px;
+      height: 270px !important;
     }
   }
 
@@ -53,6 +52,9 @@ export const BeforeContainer = styled.div`
   .big-col {
     padding: 0 !important;
     margin: 20px 0 !important;
+    @media only screen and (max-width: 768px) {
+    margin: 0 !important;
+    }
   }
   .small-row {
     margin: 0 !important;

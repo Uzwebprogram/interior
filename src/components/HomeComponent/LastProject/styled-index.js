@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const Section = styled.div`
   padding: 20px 0;
   h2 {
+    text-align: center;
     font-weight: 600;
     font-size: 30px;
     line-height: 60px;
-    text-align: center;
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: #ffffff;
@@ -51,7 +51,7 @@ export const Section = styled.div`
       position: absolute;
       bottom: 10px;
       left: 25px;
-      h2 {
+      h3 {
         font-family: "Ruda";
         font-style: normal;
         font-weight: 500;
@@ -74,7 +74,7 @@ export const Section = styled.div`
         font-size: 18px;
         line-height: 27px;
         color: #ffffff;
-        width: 186px;
+        width: 296px;
         @media only screen and (max-width: 425px) {
           font-size: 14px;
         }

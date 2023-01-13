@@ -2,25 +2,37 @@ import styled from "styled-components";
 
 export const Section = styled.div`
   padding: 60px 0;
+  @media only screen and (max-width: 920px) {
+    padding: 20px 0;
+      }
   .row {
     margin: 0 !important;
   }
 
   .col {
     h2 {
+      margin: 0;
+      padding: 0;
+      font-family: "Ruda";
       font-weight: 300;
-      font-size: 25px;
+      font-size: 18px;
       line-height: 38px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #ffffff;
+      margin-top: 35px;
+      @media only screen and (max-width: 920px) {
+      margin-top: 0px;
+      }
     }
 
     p {
+      margin: 0;
+      padding: 0;
       font-family: "Ruda";
       font-style: normal;
-      font-weight: 400;
-      font-size: 15px;
+      font-weight: 300;
+      font-size: 14px;
       line-height: 30px;
       letter-spacing: 0.07em;
       text-transform: uppercase;
@@ -47,12 +59,12 @@ export const Section = styled.div`
     h4 {
       font-family: "Ruda";
       font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
+      font-weight: 300;
+      font-size: 18px;
       line-height: 24px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      margin: 0 0 15px 0;
+      margin: 0 0 3px 0;
       color: #ffffff;
       @media only screen and (max-width: 375px) {
         font-size: 16px;
@@ -61,10 +73,11 @@ export const Section = styled.div`
     p {
       font-family: "Ruda";
       font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
+      font-weight: 300;
+      font-size: 14px;
       line-height: 22px;
       margin: 0;
+      padding: 0;
       color: #ffffff;
       @media only screen and (max-width: 375px) {
         font-size: 14px;
